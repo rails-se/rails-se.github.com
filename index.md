@@ -6,11 +6,11 @@ title: Ruby och Rails i Sverige
 Tja!
 
 ### Meetups
-* [Stockholm: SHRUG](http://www.meetup.com/SHRUG-Stockholm-Ruby-User-Group/)
-* [Stockholm: Bandhagen: BRUG](http://brug.se/)
-* [Malmö](http://www.meetup.com/malmo-ruby/)
-* [Göteborg: Got.rb](http://www.meetup.com/got-rb)
 * [Sundsvall: SRUG](https://groups.google.com/forum/#!forum/sundsvall-ruby)
+* [Stockholm: SHRUG](http://www.meetup.com/SHRUG-Stockholm-Ruby-User-Group/)
+* [Bandhagen: BRUG](http://brug.se/)
+* [Göteborg: Got.rb](http://www.meetup.com/got-rb)
+* [Malmö](http://www.meetup.com/malmo-ruby/)
 
 ### Annat
 * [Mailinglista](http://groups.google.com/group/rails-se)
