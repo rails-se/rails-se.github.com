@@ -3,8 +3,6 @@ layout: default
 title: Ruby och Rails i Sverige
 ---
 
-Tja!
-
 ### Meetups
 * [Sundsvall: SRUG](https://groups.google.com/forum/#!forum/sundsvall-ruby)
 * [Stockholm: SHRUG](http://www.meetup.com/SHRUG-Stockholm-Ruby-User-Group/)
