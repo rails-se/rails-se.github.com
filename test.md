@@ -1,8 +1,9 @@
 ---
-title: Testar Jekyll
+layout: default
+title: Ruby och Rails i Sverige
 ---
 
-Ruby och Rails i Sverige!
+Tja!
 
 ### Meetups
 * [Stockholm: SHRUG](http://www.meetup.com/SHRUG-Stockholm-Ruby-User-Group/)
