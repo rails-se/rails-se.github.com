@@ -15,4 +15,5 @@ title: Ruby och Rails i Sverige
 * [Wiki](https://github.com/rails-se/rails-se.github.com/wiki)
 
 ### Meta
-* [Den här sidan på GitHub](https://github.com/rails-se/rails-se.github.com/) [Editera](https://github.com/rails-se/rails-se.github.com/edit/master/index.md)
+* [Den här sidan på GitHub](https://github.com/rails-se/rails-se.github.com/)
+* [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/index.md)
