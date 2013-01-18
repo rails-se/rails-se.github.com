@@ -17,6 +17,4 @@ title: Resurser för Ruby och Rails på svenska eller i Sverige
 * [Globalize3](https://github.com/svenfuchs/globalize3)
   Översätt modellattribut i annan tabell.
 
-### Meta
-
-* [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/resources.md)
+[Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/resources.md)
