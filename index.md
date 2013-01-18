@@ -15,6 +15,7 @@ title: Ruby och Rails i Sverige
 * [IRC: #rails.se@Freenode](irc://irc.freenode.org/rails.se)
 
 ### Annat
+* [Resurser för Ruby och Rails på svenska eller i Sverige](/resources)
 * [Wiki](https://github.com/rails-se/rails-se.github.com/wiki)
 
 ### Meta
