@@ -15,5 +15,6 @@ title: Ruby och Rails i Sverige
 * [Wiki](https://github.com/rails-se/rails-se.github.com/wiki)
 
 ### Meta
+* [Ge tillgång till github organisationen](https://github.com/organizations/rails-se/teams/317783)
 * [Den här sidan på GitHub](https://github.com/rails-se/rails-se.github.com/)
 * [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/index.md)
