@@ -10,8 +10,11 @@ title: Ruby och Rails i Sverige
 * [Göteborg: Got.rb](http://www.meetup.com/got-rb)
 * [Malmö](http://www.meetup.com/malmo-ruby/)
 
-### Annat
+### Diskussioner
 * [Mailinglista](http://groups.google.com/group/rails-se)
+* [IRC: #rails.se@Freenode](irc://irc.freenode.org/rails.se)
+
+### Annat
 * [Wiki](https://github.com/rails-se/rails-se.github.com/wiki)
 
 ### Meta
