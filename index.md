@@ -14,7 +14,7 @@ layout: default
 * [IRC: #rails.se@Freenode](irc://irc.freenode.org/rails.se)
 
 ### Annat
-* [Bibliotek och inställningar för Sverige](/resources)
+* [Tips för svenska applikationer](/tips)
 * [Wiki](https://github.com/rails-se/rails-se.github.com/wiki)
 
 ### Meta
