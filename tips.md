@@ -16,6 +16,7 @@ title: Tips för svenska applikationer
 
 ### Blogginlägg
 
+* [Rails i18n guide](http://guides.rubyonrails.org/i18n.html)
 * [Rails i18n tips](http://henrik.nyh.se/2012/07/rails-i18n-tips/)
 
 
