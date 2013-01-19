@@ -22,6 +22,6 @@ layout: default
 
 ## Meta
 
-* [Den här sidan på GitHub](https://github.com/rails-se/rails-se.github.com/)
+* [Den här webbplatsen på GitHub](https://github.com/rails-se/rails-se.github.com/)
 * [Ge tillgång till GitHub-organisationen](https://github.com/organizations/rails-se/teams/317783)
 * [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/index.md)
