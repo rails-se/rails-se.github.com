@@ -6,13 +6,13 @@ title: Tips för svenska applikationer
 ## Kod
 
 * [sv.yml](https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/sv.yml)
-  Svensk lokaliseringsfil för det som är inbyggt i Rails.
+  <br>Svensk lokaliseringsfil för det som är inbyggt i Rails.
 * [Traco](https://github.com/barsoom/traco)
-  Översätt modellattribut i samma tabell.
+  <br>Översätt modellattribut i samma tabell.
 * [Globalize3](https://github.com/svenfuchs/globalize3)
-  Översätt modellattribut i annan tabell.
+  <br>Översätt modellattribut i annan tabell.
 * [banktools-se](https://github.com/barsoom/banktools-se)
-  Validera och normalisera svenska kontonummer, plusgiro och bankgiro.
+  <br>Validera och normalisera svenska kontonummer, plusgiro och bankgiro.
 
 ## Läsning
 

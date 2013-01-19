@@ -185,17 +185,18 @@ blockquote {
 }
 
 ul, ol, dl {
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 ul li {
-  list-style: inside;
-  padding-left: 20px;
+  list-style: outside;
+  margin-left: 15px;
 }
 
 ol li {
-  list-style: decimal inside;
-  padding-left: 20px;
+  list-style: decimal outside;
+  margin-left: 15px;
 }
 
 dl dt {
