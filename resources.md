@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resurser för Ruby och Rails på svenska eller i Sverige
+title: Bibliotek och inställningar
 ---
 
 ### Svenska och Sverige

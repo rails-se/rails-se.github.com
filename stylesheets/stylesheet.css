@@ -76,7 +76,7 @@ h1 {
   font-size: 38px;
 }
 
-h2 {
+h2.hr {
   padding-bottom: 10px;
   font-size: 32px;
   background: url('../images/bg_hr.png') repeat-x bottom;
@@ -275,8 +275,18 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#project_title {
+header {
   margin: 0 0 20px;
+}
+
+#project_title {
+  margin-bottom: 0;
+}
+
+#project_tagline {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 #downloads {

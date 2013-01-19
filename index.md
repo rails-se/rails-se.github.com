@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Ruby och Rails i Sverige
 ---
 
 ### Meetups
