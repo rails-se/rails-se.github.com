@@ -14,7 +14,7 @@ title: Tips för svenska applikationer
 * [banktools-se](https://github.com/barsoom/banktools-se)
   Validera och normalisera svenska kontonummer, plusgiro och bankgiro.
 
-## Blogginlägg
+## Läsning
 
 * [Rails i18n guide](http://guides.rubyonrails.org/i18n.html)
 * [Rails i18n tips](http://henrik.nyh.se/2012/07/rails-i18n-tips/)
