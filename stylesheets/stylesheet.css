@@ -76,26 +76,29 @@ h1 {
   font-size: 38px;
 }
 
-h2.hr {
+h2 {
   padding-bottom: 10px;
-  font-size: 32px;
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
-h3 {
+h2 {
   font-size: 24px;
 }
 
-h4 {
+h3 {
   font-size: 21px;
 }
 
-h5 {
+h4 {
   font-size: 18px;
 }
 
-h6 {
+h5 {
   font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
 }
 
 p {
@@ -274,6 +277,11 @@ header {
   font-size: 24px;
   font-weight: 300;
   margin-top: 0;
+}
+
+h2#project_tagline {
+  padding-bottom: 0;
+  background: none;
 }
 
 #main_content_wrap {
