@@ -19,5 +19,6 @@ title: Tips för svenska applikationer
 * [Rails i18n guide](http://guides.rubyonrails.org/i18n.html)
 * [Rails i18n tips](http://henrik.nyh.se/2012/07/rails-i18n-tips/)
 
+## Meta
 
-[Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/resources.md)
+* [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/resources.md)
