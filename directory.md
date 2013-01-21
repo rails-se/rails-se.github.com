@@ -59,6 +59,23 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 
   <li>
     <a href="http://www.mynewsdesk.com">Mynewsdesk</a>
+    <ul>
+      <li>David Billskog</li>
+      <li>David Wennergren</li>
+      <li>Emil Löfquist</li>
+      <li>Hilla Duka</li>
+      <li>Jan Andersson</li>
+      <li>Joakim Wersterlund</li>
+      <li>
+        <a href="http://jonasforsberg.se">Jonas Forsberg</a>
+        {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
+        {% assign github = 'himynameisjonas' %}{% include github.html %}
+      </li>
+      <li>Kristian Hellquist</li>
+      <li>Markus Nordin</li>
+      <li>Martin Svalin</li>
+      <li>Richard Johansson</li>
+    </ul>
   </li>
 
   <li>
