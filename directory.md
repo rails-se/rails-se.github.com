@@ -78,7 +78,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
         {% assign github = 'himynameisjonas' %}{% include github.html %}
       </li>
-      <li>Jonny Strömberg</li>
+      <li>
+        <a href="http://jonnystromberg.com">Jonny Strömberg</a>
+        {% assign twitter = 'javve' %}{% include twitter.html %}
+        {% assign github = 'javve' %}{% include github.html %}
+      </li>
       <li>Kristian Hellquist</li>
       <li>Markus Nordin</li>
       <li>Martin Svalin</li>
