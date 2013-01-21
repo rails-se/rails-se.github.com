@@ -89,7 +89,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
       <li>Kristian Hellquist</li>
       <li>Markus Nordin</li>
-      <li>Martin Svalin</li>
+      <li>
+        Martin Svalin
+        {% assign twitter = 'martinsvalin' %}{% include twitter.html %}
+        {% assign github = 'martinsvalin' %}{% include github.html %}
+      </li>
       <li>Richard Johansson</li>
       <li>Teo Ljungberg</li>
     </ul>
