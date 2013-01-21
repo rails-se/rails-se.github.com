@@ -68,7 +68,6 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign github = 'elisabetduka' %}{% include github.html %}
       </li>
       <li>Jan Andersson</li>
-      <li>Jonny Strömberg</li>
       <li>
         <a href="http://joakim-westerlund.se">Joakim Wersterlund</a>
         {% assign twitter = 'joakwest' %}{% include twitter.html %}
@@ -79,6 +78,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
         {% assign github = 'himynameisjonas' %}{% include github.html %}
       </li>
+      <li>Jonny Strömberg</li>
       <li>Kristian Hellquist</li>
       <li>Markus Nordin</li>
       <li>Martin Svalin</li>
