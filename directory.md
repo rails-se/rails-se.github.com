@@ -79,6 +79,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>Markus Nordin</li>
       <li>Martin Svalin</li>
       <li>Richard Johansson</li>
+      <li>Teo Ljungberg</li>
     </ul>
   </li>
 
