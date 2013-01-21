@@ -8,7 +8,7 @@ layout: default
 * [Stockholm: SHRUG](http://www.meetup.com/SHRUG-Stockholm-Ruby-User-Group/)
 * [Bandhagen: BRUG](http://brug.se/)
 * [Göteborg: Got.rb](http://www.meetup.com/got-rb)
-* [Malmö](http://www.meetup.com/malmo-ruby/)
+* [Malmö: Malmö.rb](http://malmorb.se/)
 
 ## Diskussioner
 
