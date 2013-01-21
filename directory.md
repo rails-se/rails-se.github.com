@@ -58,7 +58,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
   <li>
-    <a href="http://mynewsdesk.com">MyNewsdesk</a>
+    <a href="http://www.mynewsdesk.com">Mynewsdesk</a>
   </li>
 
   <li>
