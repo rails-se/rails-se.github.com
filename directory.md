@@ -39,7 +39,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'henrik' %}{% include twitter.html %}
         {% assign github = 'henrik' %}{% include github.html %}
       </li>
-      <li>Joakim Kolsjö</li>
+      <li>
+        <a href="https://twitter.com/joakimk">Joakim Kolsjö</a>
+        {% assign twitter = 'joakimk' %}{% include twitter.html %}
+        {% assign github = 'joakimk' %}{% include github.html %}
+      </li>
       <li>Kim Persson</li>
       <li>Tomas Skogberg</li>
     </ul>
