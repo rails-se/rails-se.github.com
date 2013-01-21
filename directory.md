@@ -65,7 +65,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>Emil Löfquist</li>
       <li>Hilla Duka</li>
       <li>Jan Andersson</li>
-      <li>Joakim Wersterlund</li>
+      <li>
+        <a href="http://joakim-westerlund.se">Joakim Wersterlund</a>
+        {% assign twitter = 'joakwest' %}{% include twitter.html %}
+        {% assign github = 'jorkas' %}{% include github.html %}  
+      </li>
       <li>
         <a href="http://jonasforsberg.se">Jonas Forsberg</a>
         {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
