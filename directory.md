@@ -101,6 +101,23 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 
   <li>
     <a href="http://oktavilla.se">Oktavilla</a>
+    <ul>
+      <li>
+        Arvid Andersson
+        {% assign twitter = 'arvid_a' %}{% include twitter.html %}
+        {% assign github = 'arvida' %}{% include github.html %}
+      </li>
+      <li>
+        Alexis Fellenius
+        {% assign twitter = 'alexisfellenius' %}{% include twitter.html %}
+        {% assign github = 'lexi' %}{% include github.html %}
+      </li>
+      <li>
+        Joel Junström
+        {% assign twitter = 'joeljunstrom' %}{% include twitter.html %}
+        {% assign github = 'joeljunstrom' %}{% include github.html %}
+      </li>
+     </ul>
   </li>
 
   <li>
