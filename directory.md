@@ -40,7 +40,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign github = 'henrik' %}{% include github.html %}
       </li>
       <li>
-        <a href="https://twitter.com/joakimk">Joakim Kolsjö</a>
+        Joakim Kolsjö
         {% assign twitter = 'joakimk' %}{% include twitter.html %}
         {% assign github = 'joakimk' %}{% include github.html %}
       </li>
