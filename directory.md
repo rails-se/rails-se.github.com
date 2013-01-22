@@ -144,3 +144,20 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
 </ul>
+
+## Sundsvall
+
+<ul>
+
+<li>
+    <a href="http://savecore.se">Savecore</a>
+    <ul>
+      <li>
+        Gustaf Lindqvist
+        {% assign twitter = 'glindqvist' %}{% include twitter.html %}
+        {% assign github = 'gustaflindqvist' %}{% include github.html %}
+      </li>
+     </ul>
+  </li>
+
+</ul>
