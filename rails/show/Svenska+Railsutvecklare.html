@@ -1,0 +1,810 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Svenska Railsutvecklare in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <p>Utöver förteckningen på denna sida, se även Sverige listan på <a href="http://www.workingwithrails.com/browse/people/country/Sweden">Working With Rails</a></p>
+
+
+	<h2>Blekinge</h2>
+
+
+	<ul>
+	<li><a href="http://www.cubiqsys.com">Cubiq</a>
+	<ul>
+	<li><span class="newWikiWord">Björn Andreasson</span>, <a href="mailto:bjorn@cubiqsys.com">e-mail</a></li>
+	</ul>
+	</li>
+		<li><a class="existingWikiWord" href="Jonas+Bengtsson.html">Jonas Bengtsson</a>, <a href="http://andthennothing.net">Weblog</a></li>
+		<li><a href="http://www.redmocca.se">Redmocca.se</a>
+	<ul>
+	<li><span class="newWikiWord">Daniel Hansson</span></li>
+	</ul>
+	</li>
+		<li><a href="http://www.stixyexperience.com">Stixy Experience</a>
+	<ul>
+	<li><span class="newWikiWord">Jonas Höglund</span>, <a href="jonas@stixy.com">e-mail</a></li>
+	</ul></li>
+	</ul>
+
+
+	<h2>Dalsland</h2>
+
+
+	<ul>
+	<li><a href="http://www.afconsult.com">ÅF</a>, <a href="mailto:peter.magnusson@afconsult.com">Peter Magnusson</a></li>
+		<li><a href="http://www.afconsult.com">ÅF</a>, <a href="mailto:kalle.henriksson@afconsult.com">Kalle Henriksson</a></li>
+	</ul>
+
+
+	<h2>Gävle</h2>
+
+
+	<ul>
+	<li><a href="TomasJogin">Tomas Jogin</a>, <a href="http://jogin.com/">http://jogin.com/</a></li>
+		<li><a href="mailto:niclas.vester@gmail.com">Niclas Vester</a></li>
+		<li><a href="mailto:peter.andersson@fsh.se">Peter Andersson, <span class="caps">FSH </span>Sweden AB</a></li>
+	</ul>
+
+
+	<h2>Göteborg</h2>
+
+
+	<ul>
+	<li><a href="http://cannedapps.com">CannedApps</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Kevin+Valdek.html">Kevin Valdek</a></li>
+	</ul>
+	</li>
+		<li><a class="existingWikiWord" href="David+Vrensk.html">David Vrensk</a>, <a href="http://www.hittamaklare.se/">HittaMäklare.se</a></li>
+		<li><a href="http://elabs.se">Elabs</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Anders+T%C3%B6rnqvist.html">Anders Törnqvist</a></li>
+		<li><span class="newWikiWord">Anders Carlsson</span></li>
+		<li><a class="existingWikiWord" href="Carl-Johan+Kihlbom.html">Carl-Johan Kihlbom</a></li>
+		<li><span class="newWikiWord">Ivan Navarrete</span></li>
+		<li><a class="existingWikiWord" href="Jonas+Nicklas.html">Jonas Nicklas</a></li>
+		<li><span class="newWikiWord">Kim Burgestrand</span></li>
+		<li><a class="existingWikiWord" href="Nicklas+Ramh%C3%B6j.html">Nicklas Ramhöj</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.ibissoft.se">IbisSoft</a>
+	<ul>
+	<li><a href="AlexeyStryi">Alexey Stryi</a></li>
+		<li><a href="TomasAndersson">Tomas Andersson</a></li>
+	</ul>
+	</li>
+		<li><span class="newWikiWord">Johan Börjesson</span>, <a href="http://www.infomega.se/">Infomega</a></li>
+		<li><a href="http://www.kentor.se/">Kentor</a>
+	<ul>
+	<li><span class="newWikiWord">Magnus Holmlund</span></li>
+		<li><span class="newWikiWord">Patrik Johansson</span></li>
+		<li><span class="newWikiWord">Per Nordqvist</span></li>
+	</ul>
+	</li>
+		<li>Magnus Enarsson, <a href="http://www.entanke.se">Entanke</a></li>
+		<li><a href="http://niclasnilsson.se/">Niclas Nilsson</a>, <a href="http://www.activa.se/">Activa</a></li>
+		<li>Oskar Lissheim-Boethius (iPhone/iOS and Rails), <a href="http://www.OLBproductions.com/">OLB Productions</a></li>
+		<li>Per-Olof Hermansson, <a href="http://www.massmarketing.se/">Mass Marketing Software AB</a></li>
+		<li><a href="http://palbrattberg.com">Pål Brattberg</a>, <a href="http://www.acando.se">Acando</a></li>
+	</ul>
+
+
+	<h2>Halmstad</h2>
+
+
+	<ul>
+	<li><span class="newWikiWord">Tobias Wiking</span>, <a href="http://www.systeamhalmstad.se">SYSteam Halmstad AB</a>, <a href="mailto:tobias@wiking.me">Email</a></li>
+	</ul>
+
+
+	<h2>Helsingborg</h2>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Hayri+Cicek.html">Hayri Cicek</a></li>
+	</ul>
+
+
+	<h2>Jönköping</h2>
+
+
+	<ul>
+	<li><a href="http://www.bwl.se/">BWL <span class="caps">IT AB</span></a></li>
+	</ul>
+
+
+	<h2>Karlstad</h2>
+
+
+	<ul>
+	<li><a href="http://www.dreamscometrue.nu/">Dreams Come True</a></li>
+		<li><a href="http://www.redpill.se/">Redpill AB</a></li>
+		<li><a href="http://www.redstone.se/">Redstone</a></li>
+	</ul>
+
+
+	<h2>Linköping</h2>
+
+
+	<ul>
+	<li><a href="http://duh.se/">Johan Eckerström</a></li>
+		<li>Hans Marmolin, &#8220;e-post&#8221; <a href="mailto::mailto:Hans.Marmolin@klockholm.se">:mailto:Hans.Marmolin@klockholm.se</a></li>
+	</ul>
+
+
+	<h2>Luleå</h2>
+
+
+	<ul>
+	<li><a href="http://www.intinor.se">Intinor</a>, <a href="mailto:info@intinor.se">e-post</a></li>
+		<li>Mikael Åhlén, <a href="http://www.ahlenx2.se">Åhlénx2</a>,  <a href="http://www.floorballmanager.com">FloorballManager</a></li>
+		<li>Christian Jönsson, <a href="mailto:christian.cj.jonsson@gmail.com">e-post</a></li>
+	</ul>
+
+
+	<h2>Malmö och Lund</h2>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Christoffer+Sawicki.html">Christoffer Sawicki</a></li>
+		<li><a class="existingWikiWord" href="Glenn+Nilsson.html">Glenn Nilsson</a></li>
+		<li><a href="http://lonroth.com">Jacob Lönroth</a> (<a href="http://www.topvisible.se">TopVisible</a>), <a href="mailto:jacob.lonroth@gmail.com">e-post</a></li>
+	</ul>
+
+
+	<h2>Mjölby</h2>
+
+
+	<ul>
+	<li>Magnus Johansson, <a href="mailto:magnus@magnus-johansson.se">e-post</a></li>
+	</ul>
+
+
+	<h2>Stockholm</h2>
+
+
+	<ul>
+	<li><a href="http://www.adaptiv.se">Adaptiv</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Johan+Lind.html">Johan Lind</a></li>
+	</ul>
+	</li>
+		<li><a href="http://athega.se">Athega AB</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Peter+Hellberg.html">Peter Hellberg</a>, <a href="http://peter.athega.se">Weblog</a>, <a href="mailto:peter.hellberg@athega.se">e-post</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.avega.se">Avega AB</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Henrik+Engstr%C3%B6m.html">Henrik Engström</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.ayond.se">Ayond AB</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Petter+Wigle.html">Petter Wigle</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.baraspara.se">Baraspara</a>
+	<ul>
+	<li><span class="newWikiWord">Frans Krojegård</span></li>
+		<li><span class="newWikiWord">Kim Fransman</span>, <a href="mailto:kim@baraspara.se">e-mail</a>, <a href="http://twitter.com/kimfransman">twitter</a></li>
+		<li><span class="newWikiWord">Mikael Björklund</span></li>
+		<li><span class="newWikiWord">Niklas Lundgren</span></li>
+	</ul>
+	</li>
+		<li><a href="http://www.barsoom.se">Barsoom</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Andreas+Alin.html">Andreas Alin</a></li>
+		<li><a class="existingWikiWord" href="Joakim+Kolsj%C3%B6.html">Joakim Kolsjö</a></li>
+		<li><a class="existingWikiWord" href="Henrik+Nyh.html">Henrik Nyh</a></li>
+		<li><a class="existingWikiWord" href="Albert+Ramstedt.html">Albert Ramstedt</a></li>
+	</ul>
+	</li>
+		<li><a href="http://blogg.se">Blogg.se</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Andrew+Crookston.html">Andrew Crookston</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.cint.com">Cint</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Kristoffer+Roup%C3%A9.html">Kristoffer Roupé</a>, <a href="mailto:kristoffer.roupe@cint.com">e-mail</a>, <a href="http://twitter.com/kitofr">twitter</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.connecta.se">Connecta</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Piotr+Fernandez.html">Piotr Fernandez</a>, <a href="mailto:piotr.fernandez@gmail.com">e-mail</a></li>
+	</ul>
+	</li>
+		<li><a href="http://cygni.se">Cygni AB</a>
+	<ul>
+	<li><a href="mailto:robert.buren@cygni.se">Robert Burén</a></li>
+	</ul>
+	</li>
+		<li><a href="http://david.kjelkerud.se">David Kjelkerud</a></li>
+		<li><a href="http://www.daytona.se/rubyonrails">Daytona</a>
+	<ul>
+	<li><span class="newWikiWord">Rasmus Sellberg</span> &#8211; Wayne&#8217;s Coffee, Nokia Global</li>
+	</ul>
+	</li>
+		<li><a class="existingWikiWord" href="Dennis+Rogenius.html">Dennis Rogenius</a></li>
+		<li><a href="http://www.diino.com">Diino AB</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Daniel+Eriksson.html">Daniel Eriksson</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.dynabyte.se">Dynabyte AB</a>
+	<ul>
+	<li><span class="newWikiWord">Måns Sandström</span></li>
+		<li><span class="newWikiWord">Rasmus Kjellman</span></li>
+	</ul>
+	</li>
+		<li><a href="http://emil.sjoblom.com">Emil Sjöblom</a></li>
+		<li><a href="http://www.enemyunknown.net">Enemy Unknown AB</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Andreas+Eriksson.html">Andreas Eriksson</a>, <a href="mailto:andreas.eriksson@enemyunknown.net">e-mail</a></li>
+	</ul>
+	</li>
+		<li><span class="newWikiWord">Erik Östling</span>, <a href="http://erikostling.se">erikostling.se</a></li>
+		<li><a href="http://www.ibissoft.se">IbisSoft</a>
+	<ul>
+	<li><a href="AlexeyStryi">Alexey Stryi</a></li>
+		<li><a href="TomasAndersson">Tomas Andersson</a></li>
+	</ul>
+	</li>
+		<li><a href="http://www.ibm.com/se/">IBM Svenska AB</a>
+	<ul>
+	<li><a href="PeterJohansson">Peter Johansson</a></li>
+		<li><a href="StefanGrahovac">Stefan Grahovac</a></li>
+	</ul>
+	</li>
+		<li><a class="existingWikiWord" href="Ingemar+Edsborn.html">Ingemar Edsborn</a></li>
+		<li><a class="existingWikiWord" href="Jack+Nutting.html">Jack Nutting</a></li>
+		<li><a href="http://www.conside.se">Jens Norrgrann</a></li>
+		<li><a class="existingWikiWord" href="Joakim+Ekberg.html">Joakim Ekberg</a>, <a href="mailto:jekb@kth.se">e-mail</a></li>
+		<li><a href="JoNtE">Jonas Montonen</a>, <a href="http://jsc-consulting.se">JoNtEs System Consulting</a></li>
+		<li><a href="mailto:jegt@jegt,net">Jonas Tehler</a>, Dashnotes AB</li>
+		<li><a href="http://voice.devl.se">Lennart Fridén</a></li>
+		<li><a class="existingWikiWord" href="Peter+K%C3%B6rdel.html">Peter Kördel</a>, <a href="mailto:peter@kordelsystems.com">email</a>, Kordel Systems</li>
+		<li><a href="http://www.linkedin.com/in/mkotsalainen">Matti Kotsalainen</a>, frilans</li>
+		<li><a href="http://www.mycaddie.net">Mycaddie AB</a>
+	<ul>
+	<li>Robert Johansson</li>
+	</ul>
+	</li>
+		<li><a href="PatrikHedman">Patrik Hedman</a></li>
+		<li><a class="existingWikiWord" href="Per+Wigren.html">Per Wigren</a>, <a href="http://blog.tuxie.se">Weblog</a></li>
+		<li><a class="existingWikiWord" href="Peter+Krantz.html">Peter Krantz</a></li>
+		<li><a href="PeterLindberg">Peter Lindberg</a>, <a href="http://fleecelabs.se">Fleecelabs</a>, <a href="http://tesugen.com/">Weblog</a></li>
+		<li><a class="existingWikiWord" href="Peter+Lind.html">Peter Lind</a>,  <a href="http://www.pockus.se">Pockus</a>, <a href="mailto:peter@lind.be">mail</a></li>
+		<li><a class="existingWikiWord" href="Peter+Marklund.html">Peter Marklund</a></li>
+		<li><span class="newWikiWord">Ramzi Ferchichi</span>, <a href="mailto:ramzi@gidappa.se">e-mail</a></li>
+		<li><a href="mailto:ragnar@monter.se">Ragnar Dahlén</a>, <a href="http://www.monter.se">Monter</a></li>
+		<li><a href="http://www.robinspainhour.com">Robin Spainhour</a></li>
+		<li><a href="http://sutajio.se">Sutajio</a>
+	<ul>
+	<li><a href="https://github.com/niho">Niklas Holmgren</a></li>
+		<li>Fredrik Lundqvist</li>
+	</ul>
+	</li>
+		<li><a href="http://www.tii.se">The Interactive Institute</a>
+	<ul>
+	<li><span class="newWikiWord">Staffan Jonsson</span></li>
+		<li><span class="newWikiWord">Daniel Sundström</span></li>
+	</ul>
+	</li>
+		<li>Tim Heighes (One Giant Leap AB) <a href="mailto:tim@onegiantleap.se">e-mail</a></li>
+		<li><a href="http://oktavilla.se">Oktavilla</a>
+	<ul>
+	<li><span class="newWikiWord">Arvid Andersson</span></li>
+		<li><span class="newWikiWord">Joel Junström</span></li>
+		<li><span class="newWikiWord">Alexis Fellenius</span></li>
+	</ul>
+	</li>
+		<li><a href="http://www.valtech.se">Valtech AB</a>
+	<ul>
+	<li><span class="newWikiWord">Marcus Ahnve</span></li>
+		<li><span class="newWikiWord">Christer Bermar</span></li>
+		<li><span class="newWikiWord">Tony Collander</span></li>
+		<li><a class="existingWikiWord" href="Andreas+Ekstr%C3%B6m.html">Andreas Ekström</a></li>
+		<li><span class="newWikiWord">Johan Rylander</span></li>
+		<li><span class="newWikiWord">Niklas Lindström</span></li>
+		<li><a class="existingWikiWord" href="Anders+Bengtsson.html">Anders Bengtsson</a></li>
+		<li><a class="existingWikiWord" href="Peter+Lind.html">Peter Lind</a></li>
+		<li><a class="existingWikiWord" href="Andreas+Bj%C3%A4rlestam.html">Andreas Bjärlestam</a></li>
+		<li><span class="newWikiWord">Daniel Wagnerius</span></li>
+		<li><a class="existingWikiWord" href="Jens+Tinfors.html">Jens Tinfors</a></li>
+		<li><span class="newWikiWord">Patrik Stenmark</span></li>
+		<li><span class="newWikiWord">Ilia Mikhailov</span></li>
+		<li><span class="newWikiWord">Johannes Edelstam</span></li>
+		<li><span class="newWikiWord">Jimmy Larsson</span></li>
+	</ul>
+	</li>
+		<li><a href="http://www.webstep.se">Webstep</a>
+	<ul>
+	<li><span class="newWikiWord">Lars Westergren</span></li>
+	</ul>
+	</li>
+		<li><a href="http://www.hinkeb.com">Henrik Berggren</a></li>
+		<li><a href="http://www.mattiasottosson.se">Mattias Ottosson</a></li>
+	</ul>
+
+
+	<h2>Sundsvall</h2>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Fredrik+Br%C3%A4nstr%C3%B6m.html">Fredrik Bränström</a></li>
+		<li><a class="existingWikiWord" href="Jonas+Klingstedt.html">Jonas Klingstedt</a></li>
+		<li><a class="existingWikiWord" href="Gustaf+Lindqvist+%28%40GLindqvist%29.html">Gustaf Lindqvist (@GLindqvist)</a></li>
+		<li><a href="http://savecore.se">Savecore</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Gustaf+Lindqvist+%28%40GLindqvist%29.html">Gustaf Lindqvist (@GLindqvist)</a></li>
+	</ul></li>
+	</ul>
+
+
+	<h2>Tranås</h2>
+
+
+	<ul>
+	<li>Peter Sundling <a href="http://www.wepic.se">Wepic Visions</a></li>
+	</ul>
+
+
+	<h2>Umeå</h2>
+
+
+	<ul>
+	<li><a href="http://www.intinor.se">Intinor</a>, <a href="mailto:info@intinor.se">e-post</a></li>
+		<li><a href="http://fkw.se">Fyrklöver Webbyrå</a>, <a href="http://fkw.se/omfyrkloeverwebbyraa/Kontakta.aspx">Jonas Arnklint</a></li>
+		<li><a href="http://beuno.se/">BEUNO</a></li>
+	</ul>
+
+
+	<h2>Uppsala</h2>
+
+
+	<ul>
+	<li><a href="http://www.citerus.se">Citerus</a>
+	<ul>
+	<li><span class="newWikiWord">Torbjörn Dunér</span>, <a href="mailto:torbjorn.duner@citerus.se">e-mail</a> </li>
+		<li><a class="existingWikiWord" href="MagnusLjadas.html">MagnusLjadas</a></li>
+		<li><a href="http://www.tobiasfors.se">Tobias Fors</a></li>
+	</ul>
+	</li>
+		<li><span class="newWikiWord">Dan Lind</span>, <a href="mailto:dan@danlind.se">e-mail</a></li>
+		<li><a href="http://www.dimea.se">Dimea</a>
+	<ul>
+	<li><span class="newWikiWord">Jim Sagevid</span>, <a href="mailto:jim@dimea.se">e-mail</a></li>
+		<li><span class="newWikiWord">Jimmie Elvenmark</span>, <a href="mailto:jimmie@dimea.se">e-mail</a></li>
+	</ul>
+	</li>
+		<li><span class="newWikiWord">Markus Kristo</span>, <a href="mailto:markus@neuroshape.com">e-mail</a></li>
+		<li><a href="http://www.qnode.se">Qnode</a>
+	<ul>
+	<li>Daniel Abrahamsson, <a href="mailto:daniel@qnode.se">e-mail</a></li>
+	</ul></li>
+	</ul>
+
+
+	<h2>Västervik</h2>
+
+
+	<ul>
+	<li><a href="http://www.d05.se/">D05 IT</a>
+	<ul>
+	<li><a class="existingWikiWord" href="Anders+Carling.html">Anders Carling</a></li>
+	</ul></li>
+	</ul>
+
+
+	<h2>Växjö</h2>
+
+
+	<ul>
+	<li><a href="http://www.hldesign.se/">HL Design &#38; Media AB</a></li>
+		<li><a href="http://www.hw-interactive.com/">HW Interactive AB</a></li>
+		<li><a href="http://www.standout.se/">Standout solutions</a></li>
+		<li><a href="http://www.usefulinnovation.se/">Useful Innovation</a></li>
+	</ul>
+
+
+	<h2>Örebro</h2>
+
+
+	<ul>
+	<li><a href="http://www.kaerus.com/">Kaerus</a>
+	<ul>
+	<li><span class="newWikiWord">Anders Elo</span>, <a href="mailto:anders@kaerus.org">e-mail</a></li>
+	</ul></li>
+	</ul>
+
+
+	<h2>IT-nomader</h2>
+
+
+	<h2>Utomlands</h2>
+
+
+	<h2>London, UK</h2>
+
+
+	<ul>
+	<li><a href="OlaBini">Ola Bini</a>, <a href="http://www.ologix.se">OLogix Consulting</a>, <a href="http://ola-bini.blogspot.com">Weblog</a></li>
+	</ul>
+
+
+	<h2>Rockville, MD, <span class="caps">USA</span></h2>
+
+
+	<ul>
+	<li><a href="SvanteAdermark">Svante Adermark</a>, <a href="http://fleecelabs.se">Fleecelabs</a> (aktiv i Sverige)</li>
+	</ul>
+
+
+	<p>(Om du vill lägga in dig på listan, försök att hålla dig till alfabetisk sortering, tack!)</p>
+          <div class="byline">
+            Revised on January 15, 2013 16:21:16
+            by
+            <a class="existingWikiWord" href="AnonymousCoward.html">Anonymous Coward</a>
+          </div>
+        </body>
+        </html>

@@ -1,0 +1,396 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Svenska VPS hotell in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <p><a href="http://en.wikipedia.org/wiki/Virtual_private_server">VPS</a>  eller Virtual Private Server är ett samlingsnamn för att dela upp en fysisk server i flera virtuella servrar.</p>
+
+
+	<p>Fördelen med det här över traditionella webbhotell är att du har möjlighet att installera precis vad du vill samtidigt som priset är, ofta, en bråkdel av vad skulle kosta ifall du skulle fixa fram en dedikerad server samt <a href="http://editing-services.org/dissertation-thesis.php">dissertation</a> hosting för den.</p>
+
+
+	<p>Virtualiseringen kan göras med några olika teknologier. <a href="http://en.wikipedia.org/wiki/VMware">VMware</a> och <a href="http://en.wikipedia.org/wiki/Xen">Xen</a> är två av dem. Xen sägs vara väldigt snabb och ha den fördelen att hotellägaren inte kan översälja sin kapacitet. Så ifall du köper 128MB <span class="caps">RAM</span> så ska du ha tillgång till det även om de andra på din delade server använder allt sitt tillgängliga.<br /><span class="newWikiWord"> http://essaywritingservice.co/</span></p>
+
+
+	<p>Rails tar en del <span class="caps">RAM</span>-minne på servern som används så tänk på att ha absolut minst 128MB ifall du inte tänker göra något annat på den.</p>
+
+
+	<p>Datan i tabellen nedan är i hotellens grundutföranden:</p>
+
+
+	<p>|Hotell:|Pris/månad:|RAM:|Hårddisk:|Trafik:|Hastighet:|Virtualiseringsteknik:|Övrigt:|
+|<a href="https://hostedby.se">hostedby&reg;</a> |95 kr inkl.moms|128MB|5GB|50GB|30MB/s|OpenVZ|Fullt konfigurerbart utifrån behov. Ovanstående info avser minsta möjliga egna val. Installationsavgift 0:-|
+|<a href="http://glesys.se/serverhotell/vps.php">GleSYS</a> |170kr exkl. moms|256MB|20GB|300GB|30Mb/s|OpenVZ||
+|<a href="http://glesys.se/serverhotell/guldvps.php">GleSYS</a> |440kr exkl. moms|1024MB|100GB|600GB|30Mb/s|OpenVZ||
+|<a href="http://glesys.se/serverhotell/vps/">GleSYS</a> |990kr exkl. moms|3072MB|50GB|1200GB|30Mb/s|OpenVZ||
+|<a href="http://fsdata.se/server/vps.php">FS-data</a> |175 kr exkl. moms|128MB|4GB|30GB|10Mb/s?|?|Startavgift 495:- exkl. moms|
+|<a href="http://www.ipeer.se/vps.php">Ipeer</a> |165 kr exkl.moms|256MB|15GB|50GB|?|?|Installationsavgift 495:- exkl. moms|
+|<a href="http://surftown.se/vps/root-vps|149">Surftown</a> kr/månad (inkl. moms)|256 MB|10 GB|50 GB/månad|?||||
+|<a href="http://www.cloudnet.se|545">Cloudnet</a> kr/månad exkl.|512 MB quad-core|10 GB|320 GB|?|Xen|Managed-hosting, backup, övervakning, installation och underhåll ingår|<br /><span class="newWikiWord">http://toppapers.org/</span></p>
+
+
+	<p>Peter Marklund har <a href="http://marklunds.com/articles/one/392">skrivit ihop instruktioner</a> för att installera Ruby on Rails på Ubuntu 8.04 Hardy Heron.</p>
+          <div class="byline">
+            Revised on January 10, 2013 15:11:46
+            by
+            <span class="newWikiWord">hostedby</span>
+          </div>
+        </body>
+        </html>

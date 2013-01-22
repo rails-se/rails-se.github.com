@@ -1,0 +1,497 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Lär dig Ruby in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <h1>Lär dig Ruby</h1>
+
+
+	<p>Att lära sig ett nytt språk kan vara svårt. Det kan också vara svårt att komma in i &#8220;idiomet&#8221;, det typiska uttryck som ett språk har att erbjuda. Några tips till hur du gör din upplevelse bättre hittar du här.</p>
+
+
+	<h2>Mest om Rails</h2>
+
+
+	<h3>Artiklar</h3>
+
+
+	<ul>
+	<li><a href="http://developer.apple.com/Tools/developonrailsleopard.html">Developing Rails Applications on Mac <span class="caps">OSX </span>Leopard</a></li>
+		<li><a href="http://www.tutorialspoint.com/index.htm">Tutorials and Reference Manuals</a></li>
+		<li><a href="http://railsonedge.blogspot.com/2008/02/rails-forum-tutorial-for-beginners-part.html">Rails Forum tutorial for beginners</a></li>
+		<li><a href="http://www.webmonkey.com/tutorial/Ruby_on_Rails_for_Beginners">Ruby on Rails for Beginners</a></li>
+		<li><a href="http://guides.rubyonrails.org/">Ruby on Rails guides</a></li>
+		<li><a href="http://railstutor.org/">Rails Tutor</a></li>
+		<li><a href="http://articles.sitepoint.com/article/learn-ruby-on-rails/1">Learn Ruby on Rails: the Ultimate beginner&#8217;s tutorial</a></li>
+		<li><a href="http://net.tutsplus.com/tutorials/other/building-a-forum-from-scratch-with-ruby-on-rails/">Building a Forum from Scratch with Rails</a></li>
+		<li><a href="http://visionmasterdesigns.com/tutorial-create-blog-using-ruby-on-rails-2-relationship/2/">Create a blog using Ruby on Rails</a></li>
+		<li><a href="http://www.teachmetocode.com/">Teach Me To Code</a></li>
+		<li><a href="http://www.railstutorial.org">Learn Rails by example</a></li>
+		<li><a href="http://lesscode.se/ruby-kurs/">Ruby kurs för nybörjare</a></li>
+	</ul>
+
+
+	<h3>Verktyg kring Rails</h3>
+
+
+	<ul>
+	<li><a href="http://mycroft.mozdev.org/download.html?name=rails+api&#38;submitform=Search">Firefoxplugin för sök i <span class="caps">API</span>:et</a></li>
+	</ul>
+
+
+	<h3>Kurser</h3>
+
+
+	<h2>Mest om Ruby</h2>
+
+
+	<h3>Artiklar</h3>
+
+
+	<ul>
+	<li><a href="http://www-128.ibm.com/developerworks/library/j-ruby/?ca=dgr-lnxw01RubyOffRails">Ruby off the Rails</a> </li>
+		<li>Eric Hodels <a href="http://segment7.net/projects/ruby/">artiklar om Ruby</a> är spännande</li>
+		<li><a href="http://www.devdaily.com/Dir/Ruby/Articles_and_Tutorials/Articles/">Tutorials and articles</a> från devdaily. </li>
+		<li><a href="http://www.troubleshooters.com/codecorn/ruby/basictutorial.htm">Ruby Basic Tutorial</a></li>
+		<li><a href="http://rubylearning.com/">Ruby Study Notes</a> </li>
+		<li><a href="http://pine.fm/LearnToProgram/">Learn to Program</a></li>
+		<li><a href="http://manwithcode.com/">Man With Code</a></li>
+		<li><a href="http://rubytu.be/">RubyTu.be</a> </li>
+		<li><a href="http://www.rubyology.com/podcasts/index">Rubyology</a></li>
+	</ul>
+
+
+	<h4>Closures</h4>
+
+
+	<p><a href="http://www.randomhacks.net/articles/2005/12/03/why-ruby-is-an-acceptable-lisp">Why Ruby is an acceptable Lisp</a> förklarar closures.</p>
+
+
+	<h4>Blocks</h4>
+
+
+	<h4>Typiska Ruby-idiom</h4>
+
+
+	<ul>
+	<li><a href="http://www.rubygarden.org/ruby?RubyIdioms">RubyGarden-wikits sidor om Ruby-idiom</a> </li>
+		<li><span class="caps">TODO</span>: peka in i Pickaxe på olika uttryckssätt</li>
+		<li>Whys blog post om &#8220;hop-scotching&#8221; </li>
+		<li>Whys blog post om &#8220;when-be-splat&#8221; </li>
+		<li>Jamis Buck om Copland, Dependency Injection-idiomet, <a href="http://rubygarden.org/index.cgi/Libraries/copland-to-needle.rdoc">http://rubygarden.org/index.cgi/Libraries/copland-to-needle.rdoc</a></li>
+	</ul>
+
+
+	<h3>Referensmaterial</h3>
+
+
+	<ul>
+	<li><a href="http://www.ruby-lang.org/en/20020101.html" title="engelska">What is Ruby</a></li>
+		<li><a href="http://www.poignantguide.net/ruby/">Why’s (Poignant) Guide to Ruby</a></li>
+		<li><a href="http://poignantguide.net/ruby/expansion-pak-1.html" title="with a Basic Introduction to Irb">Why’s (Poignant) Guide to Ruby :: Expansion Pak #1. The Tiger’s Vest</a></li>
+		<li>The Pickaxe: <a href="http://www.whytheluckystiff.net/ruby/pickaxe/">Programming Ruby: The Pragmatic Programmer&#8217;s Guide</a></li>
+		<li><a href="http://www.ruby-doc.org/docs/UsersGuide/rg/">Ruby user&#8217;s guide</a></li>
+	</ul>
+
+
+	<h3>Kod som är bra att läsa</h3>
+
+
+	<p>Eric Hodels <a href="http://segment7.net/projects/ruby/snippets/">Snippets</a> lämpar sig väl som exempel på Ruby i aktion.</p>
+
+
+	<p>Det är också en smart idé att läsa RubyGems eller andra libraries. Det är fungerande, snygg Rubykod. Det är mycket lättare att läsa den än att lära sig japanska och hänga på de främsta rubyisternas webbloggar.</p>
+
+
+	<h2>Rubyister</h2>
+
+
+	<h3>I Japan</h3>
+
+
+	<h4>ko1</h4>
+
+
+	<p>I Japan bor de flesta rubyisterna, bland annat ko1 (Sasada Koichi, <a href="http://www.namikilab.tuat.ac.jp/~sasada/diary/" title="japanska">hans dagbok</a>), som skriver <a href="http://www.atdot.net/yarv/">YARV</a>, Rubys kommande virtuella maskin.</p>
+
+
+	<p>Why <a href="http://redhanded.hobix.com/cult/youKnowKoichiSanYeahKoichiAtNamikilabInTokyoKnowWhatHeSApparentlyTheChosenSonShiGetALoadOfThat.html">bloggade om Sasada-san</a> och har där ett foto.</p>
+
+
+	<h4>Rubyist Magazine</h4>
+
+
+	<p><a href="http://jp.rubyist.net/magazine/">Rubyist Magazine</a> är ett japanskt tryckt magasin som behandlar Ruby. Vissa av artiklarna har kodexempel, och de är uttryckta i&#8230; Ruby. Kommentarer, strängar, osv, är på kanji. (Googla lösa ord och projektnamn, så får du ut mera av magasinet. Men det är mera av en cargo cult än ett bra sätt att lära sig saker om Ruby.)</p>
+
+
+	<h3>I flock, online (på engelska)</h3>
+
+
+	<p>Du kan också kika in på nyhetsgruppen comp.lang.ruby (<a href="http://groups.google.com/group/comp.lang.ruby?lnk=li">Googles spegling</a>)</p>
+
+
+	<p>På <a href="http://news.gmane.org/">Gmane</a> hittar du tonvis med listor och grupper att följa: <a href="http://news.gmane.org/index.php?prefix=gmane.comp.lang.ruby">subgrupperna till comp.lang.ruby</a></p>
+          <div class="byline">
+            Revised on February 08, 2011 16:38:27
+            by
+            <a class="existingWikiWord" href="Hayri+Cicek+.html">Hayri Cicek </a>
+          </div>
+        </body>
+        </html>

@@ -1,0 +1,514 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Testa med Rails in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <p>Acceptans-tester med <a class="existingWikiWord" href="SeleniumOchRails.html">SeleniumOchRails</a>.</p>
+
+
+	<h1>Rubys standardbiblioteks testramverk: Test::Unit</h1>
+
+
+	<p>För att skriva tester med Ruby kan du subklassa <code>Test::Unit::TestCase</code>.</p>
+
+
+<code><pre>
+require "test/unit" 
+# This is the file I want tested
+require "age" 
+
+# Test-case for our Age class
+class Testage &lt; Test::Unit::TestCase
+
+  # Testing the old_enough method
+  def test_age_tester
+    @age = Age.new
+    assert_instance_of(Age, @age);
+
+    assert( @age.old_enough(1931), "1931 is alright" );
+    assert( @age.old_enough(1970), "1970 is alright" );
+    assert( !@age.old_enough(1971), "1971 is too young." );
+  end
+
+end
+</pre></code>
+
+	<p>Som du ser är det helt vanlig xUnit-format på assertsen, och det är inte speciellt Ruby-artat egentligen. Varje testmetod måste heta något med <code>test_</code>. Annars körs de inte.</p>
+
+
+	<h3>Setup och teardown finns också</h3>
+
+
+	<p>De speciella metoderna <code>setup</code> körs före alla enskilda <code>test_</code>-metoder, <code>teardown</code> efter.</p>
+
+
+<code><pre>
+require "test/unit" 
+require "age" 
+
+class Testage &lt; Test::Unit::TestCase
+
+  def setup
+    @age = Age.new
+    assert_instance_of(Age, @age);
+  end
+
+  # Testing the old_enough method
+  def test_age_tester
+    assert( @age.old_enough(1931), "1931 is alright" );
+    assert( @age.old_enough(1970), "1970 is alright" );
+    assert( !@age.old_enough(1971), "1971 is too young." );
+  end
+
+end
+</pre></code>
+
+	<p>Nu har vi bäddat för att fler tester kan skrivas för de andra metoderna i <code>Age</code>, utan att vi upprepar oss. <a href="http://www.ruby-doc.org/core/classes/Test/Unit.html">Test::Units dokumentation</a> berättar resten.</p>
+
+
+	<h2>Lägga till fler assertions i Test::Unit::TestCase</h2>
+
+
+	<p>Om vi kommer på att vi ska ha en extra assertion kan vi skapa den runtime, för alla klasser står på vid gavel (som alltid i Ruby):</p>
+
+
+<code><pre>
+# Open the Test module (look at the class we were subclassing earlier!)
+module Test
+  # "Unit" is the middle part of the name we used
+  module Unit
+    # TestCase is a class
+    class TestCase
+      # Adding a new, important assertion
+      def assert_funny
+        puts "It aint." 
+      end
+
+    end
+  end
+end
+
+</pre></code>
+
+	<p>OK, på det sättet kan man lasta in det syntaktiska socker man känner att ens tester behöver. Lägg in ovanstående tillägg i en egen fil, kalla den kanske <code>myasserts.rb</code>, och <code>require</code>:a in den efter <code>test/unit</code>.</p>
+
+
+	<h1>RSpec: mer semantiskt beskrivande tester</h1>
+
+
+	<p><a href="http://blog.daveastels.com/">Dave Astels</a> beskriver <span class="caps">BDD</span>, Behaviour-driven development, som är ett buzzword som betyder &#8220;test-driven development done right&#8221;, i en <a href="http://video.google.com/videoplay?docid=8135690990081075324&#38;pl=true">video hos Google</a>. I den videon visar han RSpec, &#8220;Behaviour Specification Framework for Ruby&#8221;.</p>
+
+
+	<p><a href="http://rspec.rubyforge.org/">http://rspec.rubyforge.org/</a><br /><a href="http://www.onlinecnaclass.com/">http://www.onlinecnaclass.com/</a><br />Hämta RSpec som gem:</p>
+
+
+	<pre><code>sudo gem install rspec</code></pre>
+
+
+	<p>Ovanstående test-case kunde se ut såhär som specifikation:<br /><code><pre>
+require "age" 
+require "rubygems" 
+require_gem "rspec" 
+
+age = Age.new
+age.old_enough(1931).should.be false;
+</pre></code></p>
+
+
+	<p><a class="existingWikiWord" href="Testa+Med+RSpec.html">Testa Med RSpec</a></p>
+
+
+	<h1>Rake och Rails</h1>
+
+
+	<p>Rake-tasksen som Rails bidrar med är otroliga: alla test-case som ligger i din applikations testkataloger kommer att köras när du kör <code>rake</code>.</p>
+
+
+	<h1>ZenTest: skapar stumpar åt dig</h1>
+
+
+	<p>Ryan Davis aka Zenspider, har skrivit <a href="http://www.zenspider.com/ZSS/Products/ZenTest/">ZenTest</a>.</p>
+
+
+	<p>ZenTest tittar på existerande kod, och letar efter tester, och om den inte hittar några tester så skapar den dem för Test::Unit. Små stumpar av kod som:</p>
+
+
+	<pre><code>def test_statement
+  raise NotImplementedError, 'Need to write test_statement'
+end</code></pre>
+
+
+	<p>Artikeln <a href="http://www.linuxjournal.com/article/7776">How to Use ZenTest with Ruby</a> berättar vad ZenTest är, och varför det är bra. (Den som läst Fowlers <a href="http://www.refactoring.com/">Refactoring</a> kan nicka igenkännande.)</p>
+
+
+	<h1>Läs mer</h1>
+
+
+	<p>Artikeln <a href="http://glu.ttono.us/articles/2005/10/29/why-and-how-ruby-and-rails-unit-testing">Why and how: Ruby and Rails testing</a></p>
+
+
+	<p><a href="http://wiki.pragmatus.com/index.php?title=Test_Driven_Development_with_Ruby">Test Driven Development with Ruby</a> &#8211; av Peter Marklund, ger en översikt över testning i Ruby och Ruby on Rails</p>
+          <div class="byline">
+            Revised on June 08, 2011 13:38:20
+            by
+            <a class="existingWikiWord" href="AnonymousCoward.html">Anonymous Coward</a>
+          </div>
+        </body>
+        </html>

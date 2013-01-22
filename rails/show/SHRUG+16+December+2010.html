@@ -1,0 +1,495 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>SHRUG 16 December 2010 in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <h1>SHRUG-träff 16 december 2010</h1>
+
+
+	<p>MyNewsdesk har flyttat till större lokaler, och nu vill vi dra vårt strå till stacken för att göra <span class="caps">SHRUG</span>-träffar till någonting regelbundet återkommande.</p>
+
+
+	<h2>Plats</h2>
+
+
+	<p>Hos <a href="http://www.mynewsdesk.com">MyNewsdesk</a> på <a href="http://maps.google.com/maps?f=q&#38;q=Rosenlundsgatan+40&#38;sll=59.314007,18.056896&#38;z=16">Rosenlundsgatan 40</a></p>
+
+
+	<h2>Tid</h2>
+
+
+	<p>18:00 den 16 december</p>
+
+
+	<h2>Program</h2>
+
+
+	<ul>
+	<li>Öl, pizza och umgänge, såklart</li>
+		<li><span class="caps">J2EE</span> to rails noob in 12 months (Brian Riddle)</li>
+	</ul>
+
+
+	<ul>
+	<li>En månad av TextMate &rarr; Vim (Henrik Nyh)
+
+	<p>- MacVim: <a href="http://code.google.com/p/macvim/">http://code.google.com/p/macvim/</a> Eller med Homebrew: brew install macvim</p>
+
+
+	<p>- Janus, &#8220;a MacVim distro&#8221;: <a href="https://github.com/carlhuda/janus">https://github.com/carlhuda/janus</a></p>
+
+
+	<p>- Mina dotfiles, baserade på Janus (.vimrc, .gvimrc, .vim/): <a href="https://github.com/henrik/dotfiles">https://github.com/henrik/dotfiles</a></p>
+
+
+	<p>- En bloggpost om MacVim och Janus: <a href="http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/">http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/</a></p></li>
+	</ul>
+
+
+	<ul>
+	<li><a href="http://marklunds.com/s5/mongodb-logging/html/logging_with_mongodb.html">Request logging with MongoDB</a> (Peter Marklund)</li>
+		<li>Show off your data. Create a dashboard.  (Richard Johansson / Jonas Forsberg)
+
+	<p>- presentation: <a href="http://goo.gl/FBtLb">http://goo.gl/FBtLb</a></p></li>
+	</ul>
+
+
+	<ul>
+	<li>&#8220;Vi söker folk&#8221; &#8211; tala om för alla att ni söker Ruby-utvecklare °</li>
+	</ul>
+
+
+	<p>(°) På förekommen anledning. Alla som söker Ruby-utvecklare får en minut eller två för att berätta om sig och jobbet.</p>
+
+
+	<p>Om du vill presentera något, skryta, ge en lightning talk eller på annat sätt bidra till kvällen är du välkommen att höra av dig till Martin (per <a href="mailto:martin.svalin@newsdesk.se">mail</a> eller <a href="http://twitter.com/martinsvalin">twitter</a>)</p>
+
+
+	<h2>Deltagare</h2>
+
+
+	<ol>
+	<li>David Wennergren (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Martin+Svalin.html">Martin Svalin</a> (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Richard+Johansson.html">Richard Johansson</a> (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Joakim+Westerlund.html">Joakim Westerlund</a> (MyNewsdesk)</li>
+		<li>Mårten Nilsson (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Jonas+Forsberg.html">Jonas Forsberg</a> (MyNewsdesk)</li>
+		<li>Peter Marklund (Rails Mentor)</li>
+		<li><a class="existingWikiWord" href="Carl-Johan+Kihlbom.html">Carl-Johan Kihlbom</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><a class="existingWikiWord" href="Ingemar+Edsborn.html">Ingemar Edsborn</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><a class="existingWikiWord" href="Peter+Hellberg.html">Peter Hellberg</a> (Athega)</li>
+		<li><a class="existingWikiWord" href="Andrew+Crookston.html">Andrew Crookston</a> (Athega)</li>
+		<li><a class="existingWikiWord" href="Joakim+Ekberg.html">Joakim Ekberg</a> (Barefoot Hackers)</li>
+		<li><a class="existingWikiWord" href="Henrik+Nyh.html">Henrik Nyh</a> (Bukowskis)</li>
+		<li><a class="existingWikiWord" href="Joakim+Kolsj%C3%B6.html">Joakim Kolsjö</a> (Bukowskis)</li>
+		<li><a class="existingWikiWord" href="Albert+Ramstedt.html">Albert Ramstedt</a> (Bukowskis)</li>
+		<li>Martin Frost</li>
+		<li><a class="existingWikiWord" href="Peter+Lind.html">Peter Lind</a> (Valtech)</li>
+		<li><a class="existingWikiWord" href="Fredrik+Br%C3%A4nstr%C3%B6m.html">Fredrik Bränström</a> (ApoEx)</li>
+		<li><a class="existingWikiWord" href="Johan+Lundstr%C3%B6m.html">Johan Lundström</a> (Thalamus)</li>
+		<li><a class="existingWikiWord" href="Brian+Riddle.html">Brian Riddle</a> (<a class="existingWikiWord" href="TV4.html">TV4</a>)</li>
+		<li><span class="newWikiWord">Robbin Edgren</span></li>
+		<li><a class="existingWikiWord" href="Anton+Lindqvist.html">Anton Lindqvist</a> (qvister)</li>
+		<li><a class="existingWikiWord" href="Dennis+Rogenius.html">Dennis Rogenius</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><span class="newWikiWord">Kristian Laustsen</span> (<span class="newWikiWord">24HR</span>)</li>
+		<li><span class="newWikiWord">Markus Ullmark</span> (<span class="newWikiWord">24HR</span>)</li>
+		<li>Bence Vajda (LRF Media)</li>
+		<li>Linus Sellberg (Servicefactory)</li>
+		<li><span class="newWikiWord">Karl Eklund</span></li>
+		<li><a class="existingWikiWord" href="Anders+Bengtsson.html">Anders Bengtsson</a> (Valtech)</li>
+		<li><span class="newWikiWord">Simon Andersson</span></li>
+		<li><a class="existingWikiWord" href="Jens+Norrgrann.html">Jens Norrgrann</a> (Conside Solutions AB)</li>
+		<li><span class="newWikiWord">Tobias Wallin</span> (Handelsoasen)</li>
+		<li><a class="existingWikiWord" href="David+Hall.html">David Hall</a> (<a class="existingWikiWord" href="TV4.html">TV4</a>)</li>
+		<li>Martin Berglund (Sundit AB)</li>
+		<li>Oskar Holmstrand</li>
+		<li><a class="existingWikiWord" href="Per+%C3%85str%C3%B6m.html">Per Åström</a> (<a class="existingWikiWord" href="TV4.html">TV4</a>)</li>
+		<li>Kristian G Madsen (KYH)</li>
+		<li>Tim Romberg (KYH)</li>
+		<li>Johan Edlund (Kungliga biblioteket)</li>
+		<li>Johan Wärlander</li>
+		<li>Lowe Schmidt</li>
+		<li>Samuel Carlsson</li>
+		<li>Henrik Sjökvist (Searchfactory)</li>
+		<li>Markus Nordin (KYH)</li>
+		<li>Ludvig Omholt (TestFreaks)</li>
+		<li>Mikael Granholm</li>
+		<li>Joakim Larsson</li>
+		<li>Kristian Hellquist (Travelpartner)</li>
+		<li>David Backeus (Streamio)</li>
+		<li>Anna Steinsaphir (TestFreaks)</li>
+		<li><a class="existingWikiWord" href="Daniel+Thor.html">Daniel Thor</a> (<a href="http://Tretti.se">Tretti.se</a>)</li>
+		<li>Arvid Andersson (Winston Design)</li>
+		<li>Alexander Sandström (student)</li>
+		<li>Fredrik Abrahamsson (student)</li>
+		<li>Rasmus Sellberg (<a href="http://www.daytona.se">Daytona</a>)</li>
+		<li>Sven Johansson (<a href="http://www.mejsla.se">Mejsla</a>)</li>
+		<li>Kalle Persson (<a href="http://www.afonsowilsson.se">AfonsoWilsson</a>)</li>
+		<li>Alexander Bystedt (Bukowskis)</li>
+		<li>Stewart Rutledge (Bukowskis)</li>
+	</ol>
+          <div class="byline">
+            Revised on March 02, 2011 12:11:40
+            by
+            <a class="existingWikiWord" href="Anders+Bengtsson.html">Anders Bengtsson</a>
+          </div>
+        </body>
+        </html>

@@ -18,6 +18,7 @@ layout: default
 ## Annat
 
 * [Den gamla Wiki-sidan](http://old.rails.se/rails/show/HomePage)
+* [Spamrensade sidor från den gamla Wiki-sidan på github pages](/rails/show/HomePage.html)
 * [Tips för svenska applikationer](/tips)
 * [Team, projekt och utvecklare](/directory)
 

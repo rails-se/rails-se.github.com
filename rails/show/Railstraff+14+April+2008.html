@@ -1,0 +1,439 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Railsträff 14 April 2008 in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <h1>SHRUG-möte med JRuby-tema</h1>
+
+
+	<p>Jag har varit i kontakt med Ola Bini, som flera av er säkert känner igen från tidigare <span class="caps">SHRUG</span>-möten. Han åker numera omkring rätt mycket i världen på konferenser, senast QCon och ett Google Tech talk, och pratar om Ruby/Rails/JRuby.<br />Om några veckor kommer han att vara en kort stund i Sverige, och då har jag bokat in honom för att hålla en dragning för oss på ett <span class="caps">SHRUG</span>-möte.</p>
+
+
+	<p>Här är Olas ord om vad han tänkte prata om.</p>
+
+
+	<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />JRuby &#8211; vad är nytt och häftigt?</p>
+
+
+	<p>JRuby 1.1 har just släppts, med bättre prestanda, fler <br />integrationspunkter och bättre stöd för Ruby.<br />Denna presentation kommer först gå igenom varför alla Rubyutvecklare bör <br />ta en titt på JRuby, och hur man lätt kan komma igång. Resten av <br />presentation kommer prata om vad som är nytt i JRuby 1.1 och intressanta <br />projekt som använder JRuby<br />&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+
+
+	<p>Så jag föreslår ett <span class="caps">SHRUG</span>-möte 14/4, med JRuby-inriktning:</p>
+
+
+	<p>18:00-19:30 Olas dragning<br />19:30-20:30 Mingel och diskussioner (och kanske fortsättning på närliggande pub eller liknande&#8230;)</p>
+
+
+	<p>Valtech sponsrar lite mackor, förfriskningar och en lokal på Hotell Hellsten på Luntmakargatan 68. (Ett kvarter från Valtechs kontor om ni varit där förut)<br /><a href="http://www.hitta.se/ViewDetailsPink.aspx?Vkiid=UfZF82tBMZJtm5E6ow3vlg==">http://www.hitta.se/ViewDetailsPink.aspx?Vkiid=UfZF82tBMZJtm5E6ow3vlg==</a></p>
+
+
+	<p>För anmälan, lägg till ditt namn och företag eller liknande längst ned på listan. Platserna är begränsade, så ta bort ditt namn om du inte kan komma.</p>
+
+
+	<p>Hoppas vi ses där.<br />Välkomna!<br />/Andreas Ekström &#38; Johan Lind</p>
+
+
+	<p>Anmälda:</p>
+
+
+	<ol>
+	<li>Johan Lind, Valtech</li>
+		<li>Andreas Ekström, Valtech</li>
+		<li>Robert Burén, Cygni</li>
+		<li>Peter Marklund</li>
+		<li>Henrik Nyh</li>
+		<li>Andreas Arledal, Frilans</li>
+		<li>Andreas Alin</li>
+		<li>Niklas Lindström, Valtech</li>
+		<li>Tommy Westerberg, Frilans</li>
+		<li>Anders Bengtsson, PriceRunner</li>
+		<li>Ernö Török, Valtech</li>
+		<li>Joakim Kolsjö</li>
+		<li>Martin Ström</li>
+		<li>David Billskog, Valtech</li>
+		<li>Mikael Amborn, Avega</li>
+		<li>Dennis Rogenius</li>
+		<li>Albert Ramstedt</li>
+		<li>Peter Hellberg, Athega</li>
+		<li>David Backeus, Eframe / Streamio / Gear</li>
+		<li>Johannes Edelstam, Xtreme Development</li>
+		<li>Patrik Stenmark, Xtreme Development</li>
+		<li>Bengt Carlström</li>
+		<li>Marcus Persson, Racasse</li>
+		<li>Patrick Zeits, Racasse</li>
+		<li>Mikael Uvebrandt, Racasse</li>
+		<li>Mattias Johansson</li>
+		<li>Simon Lundström, Stockholms Universitet</li>
+		<li>Henrik Röschmann</li>
+		<li>Joakim Ekberg</li>
+		<li>Jimmy hedman, South Pole</li>
+		<li>Lars Westergren, Webstep</li>
+		<li>Rasmus Brinck</li>
+	</ol>
+
+
+	<p><strong>32 mackor beställda, anmäler du dig nu är du fortfarande välkommen men blir tyvärr utan macka</strong></p>
+          <div class="byline">
+            Revised on April 14, 2008 15:47:12
+            by
+            <a class="existingWikiWord" href="AnonymousCoward.html">Anonymous Coward</a>
+          </div>
+        </body>
+        </html>

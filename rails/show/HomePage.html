@@ -1,0 +1,472 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>HomePage in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <p>Välkommen till wikin för rails.se, ett svenskt/nordiskt nätverk för utvecklare som använder <a class="existingWikiWord" href="Ruby+on+Rails.html">Ruby on Rails</a>.</p>
+
+
+	<p>Här är det fritt fram att lägga upp presentationer, information om Ruby/Rails-relaterade sammankomster/konferenser, guider, tips och tricks och liknande.</p>
+
+
+	<p>Förutom den här webbplatsen finns även en svenskspråkig <a class="existingWikiWord" href="mailinglista.html">mailinglista</a> och en <a class="existingWikiWord" href="irc-kanal.html">irc-kanal</a>.</p>
+
+
+	<p>På Twitter använd förslagsvis hashtag <a href="http://twitter.com/search?q=%23SHRUGse">#SHRUGse</a> då #shrug inte är unikt (Engelska: rycka på axlarna). För Sundsvall Ruby User Group används hastag <a href="">#SRUG</a>.</p>
+
+
+	<h2>Nyheter</h2>
+
+
+	<ul>
+	<li>2013-02-06 <a class="existingWikiWord" href="SHRUG+6+februari.html">SHRUG 6 februari</a> i Stockholm </li>
+	<li>2013-01-15 <a class="existingWikiWord" href="SHRUG+15+januari.html">SHRUG 15 januari</a> i Stockholm </li>
+		<li>2012-12-05 <a class="existingWikiWord" href="SRUG+%238+13+december.html">SRUG #8 13 december</a> i Sundsvall</li>
+		<li>2012-11-29 <a class="existingWikiWord" href="SHRUG+Open+Source+Hacknight+29+november+2012.html">SHRUG Open Source Hacknight 29 november 2012</a> i Stockholm</li>
+	</ul>
+
+
+	<p><a class="existingWikiWord" href="Arkiverade+nyheter.html">Arkiverade nyheter</a></p>
+
+
+	<h2>Vill du vara Rubymentor?</h2>
+
+
+	<p>Anmäl dig till <a href="http://groups.google.com/group/rubymentors-se">rubymentors-se@googlegroups.se</a> om du vill vara Rubymentor. Du måste inte vara expert, det räcker med att du vill växa genom att lära ut. Vi samlar en del information och tips <a href="http://rails.se/rails/show/InformationForMentorer">här</a></p>
+
+
+	<h2>Vill du ha en Rubymentor?</h2>
+
+
+	<p>Anmäl ditt intresse via <a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&#38;formkey=dGRzNE13VGxOUUIwODJpc1B6NE0xWFE6MQ#gid=0">formuläret</a> och berätta lite om dig själv och dina förväntningar.</p>
+
+
+	<h2>Köp Rails-arbetskraft</h2>
+
+
+	<p><a class="existingWikiWord" href="Svenska+Railsutvecklare.html">Svenska Railsutvecklare</a></p>
+
+
+	<h2>Projekt som kör Rails</h2>
+
+
+	<p>Se en lista med <a class="existingWikiWord" href="Svenska+Railsprojekt.html">Svenska Railsprojekt</a>.</p>
+
+
+	<h2>Hosta Rails</h2>
+
+
+	<p><a class="existingWikiWord" href="Svenska+webbhotell+som+st%C3%B6der+Rails.html">Svenska webbhotell som stöder Rails</a><br /><a class="existingWikiWord" href="Svenska+VPS+hotell.html">Svenska VPS hotell</a><br /><a class="existingWikiWord" href="Amerikanska+webbhotell.html">Amerikanska webbhotell</a> som stöder Rails<br /><a class="existingWikiWord" href="Danska+webbhotell.html">Danska webbhotell</a> som stöder Rails</p>
+
+
+	<h2>Konferenser som några av oss är på</h2>
+
+
+	<ul>
+	<li>Inga aktuella konferenser just nu.</li>
+	</ul>
+
+
+	<h2>Lär dig mer om Ruby,  Rails och annat</h2>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Tips+f%C3%B6r+svenska+railsapplikationer.html">Tips för svenska railsapplikationer</a></li>
+		<li>Om Ruby: <a class="existingWikiWord" href="L%C3%A4r+dig+Ruby.html">Lär dig Ruby</a> </li>
+		<li>Om testing: <a class="existingWikiWord" href="Testa+med+Rails.html">Testa med Rails</a></li>
+		<li>Om databaser: <a class="existingWikiWord" href="Rails+migrations.html">Rails migrations</a></li>
+		<li>Utbildningar: <a class="existingWikiWord" href="Rails+educations.html">Rails educations</a></li>
+	</ul>
+
+
+	<h2>Hitta mer Rubyfolk</h2>
+
+
+	<p>Listan över <a class="existingWikiWord" href="RUG.html">RUG</a>:ar (Ruby User Group) i Sverige.</p>
+
+
+	<p>Besök någon <a class="existingWikiWord" href="Chat.html">Chat</a>.</p>
+
+
+	<h2>Vad händer i den skandinaviska railsvärlden?</h2>
+
+
+	<p><a class="existingWikiWord" href="Nordic+Ruby+Conference.html">Nordic Ruby Conference</a>, 16-18 juni 2011 i Göteborg<br /><a class="existingWikiWord" href="Railstraffar+i+Stockholm.html">Railsträffar i Stockholm</a><br /><a class="existingWikiWord" href="Skandinaviska+Railsbloggar.html">Skandinaviska Railsbloggar</a></p>
+
+
+	<h2>Önskade sidor</h2>
+
+
+	<p>Skriv ned vad du saknar här på <a href="http://rails.se">rails.se</a> på listan över <a class="existingWikiWord" href="%C3%B6nskade+sidor.html">önskade sidor</a>,  så kan andra besökare börja skriva dem åt dig.</p>
+
+
+	<h2>External</h2>
+
+
+	<p>Den här wikin är öppen för alla utan krav på registrering och det är något som attraherar idioter som spammar. I dagsläget har vi inget vattentätt sätt att hindra dessa varför det emellanåt dyker upp sidor  som inte har något med Ruby/Rails att göra. Du välkomnas att rensa bort sådana genom att navigera bakåt i tiden till senaste riktiga inlägg och välja rollback.</p>
+
+
+          <div class="byline">
+            Revised on January 17, 2013 20:36:26
+            by
+            <a class="existingWikiWord" href="AnonymousCoward.html">Anonymous Coward</a>
+          </div>
+        </body>
+        </html>

@@ -1,0 +1,492 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>Ruby- och Rails-träff 28 januari 2010 in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <h1>SHRUG-möte 28 januari 2010</h1>
+
+
+	<p>Träff med enklare presentationer och hackande på temat Ruby och Rails.</p>
+
+
+	<ul>
+	<li><strong>Plats:</strong> <a href="http://www.auktionskompaniet.com">Auktionskompaniet</a>, Hälsingegatan 43 i Vasastan (<a href="http://www.auktionskompaniet.com/helpdesk#question_63">hitta hit</a>).</li>
+		<li><strong>Tid:</strong> Torsdag 28 januari kl 18:30, men droppa in när ni kan efter det. Håller på så länge vi vill, kanske som senast till ca 22:00?</li>
+		<li><strong>Mat och dryck:</strong> Vi ordnar dricka och nåt lättare tilltugg.</li>
+		<li><strong>Elektronik:</strong> Vi har projektor (VGA), <span class="caps">VGA</span>-till-Mini DisplayPort-adapter, <span class="caps">DVI</span>-till-VGA-adapter, några eluttag.</li>
+	</ul>
+
+
+	<h2>Filosofi</h2>
+
+
+	<p>Vi skulle vilja blåsa liv i Stockholms Ruby/Rails-community med mer regelbundna träffar. Efter detta tillfälle hoppas vi att kunna ha träffar kanske en gång i månaden.</p>
+
+
+	<p>Vi hoppas också att träffarna kan bli mer interaktiva genom att ha fler, kortare och mer informella presentationer, och att vi utöver presentationerna också har nån sorts hackande varje gång.</p>
+
+
+	<p>För att få material till regelbundna träffar föreslår vi att alla samlar ihop idéer mellan träffarna. Om du upptäcker ett bra kodbibliotek eller en smart lösning, håll en kort presentation. Om du löser ett intressant problem, destillera det till en uppgift vi kan hacka på. And then to picture out what will happen on the <a href="http://www.thewalkingdeadmegavideo.com/">The Walking Dead Season 2 Episode 5</a></p>
+
+
+	<h2>Vad händer?</h2>
+
+
+	<p><strong>ca 18:30-18:45</strong>: Kort välkomst, presentera oss.</p>
+
+
+	<p><strong>ca 18:45-20:00</strong>: Presentationer:
+
+	<ul>
+	<li><del><a class="existingWikiWord" href="Simon+Lundstr%C3%B6m.html">Simon Lundström</a> hade tänkt hålla i en liten talk om hur man använder Vim effektivt (med utgångspunkt från hyfsat vana användare, men alla lär sig nog något) och live-kodar (med Vim givetvis) ett Ruby-script som interagerar med Flickr. Ca 30 min, antagligen lite mer.</del> Simon är sjuk :(</li>
+	</ul>
+</p>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Joakim+Kolsj%C3%B6.html">Joakim Kolsjö</a> kan prata lite om vad som gör test långsamma och vad man kan göra för att snabba upp det. 10 min.</li>
+	</ul>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="ippa.html">ippa</a> tänkte snacka ~10-15 om hans erfarenhet av 2D spelutveckling i Ruby, snabbt gå igenom vilka libs som finns, ungefär hur de fungerar och deras för och nackdelar. Även kort nudda vid vilka deployment options (skapa en mitt_spel.exe) som finns.</li>
+	</ul>
+
+
+	<ul>
+	<li><a class="existingWikiWord" href="Albert+Ramstedt.html">Albert Ramstedt</a> kan anordna en diskussion om &#8220;best practices&#8221; med <a href="http://www.matthewpaulmoore.com/ruby-on-rails-code-quality-checklist">denna artikel</a> som utgångspunkt. Ca 30 min</li>
+	</ul>
+
+
+	<p><strong>ca 20:00-21:00</strong>: Mat och hack. Vi som arrangerar träffen presenterar tre alternativ på små uppgifter att lösa med Ruby (ca 5 min per presentation).  Välj en (eller flera), hacka i par eller små grupper (ca 45 min), sen diskuterar vi och jämför.</p>
+
+
+	<p>Hackförslag:</p>
+
+
+	<ul>
+	<li><a href="http://gist.github.com/288933">Blocket.se scraper/relative date parsing</a></li>
+		<li>processing-specs: <a href="http://github.com/aalin/processingspec">http://github.com/aalin/processingspec</a></li>
+		<li><span class="caps">IRC</span> bot / sinatra: <a href="http://gist.github.com/288965">http://gist.github.com/288965</a></li>
+		<li><a href="http://www.pcturbosoft.com/">OEM software</a><br />Faster tests presentation:</li>
+		<li>The presentation: <a href="http://github.com/joakimk/presentations/tree/master/shrug_jan2010_faster_testruns/">http://github.com/joakimk/presentations/tree/master/shrug_jan2010_faster_testruns/</a></li>
+		<li>Testbot: <a href="http://github.com/joakimk/testbot">http://github.com/joakimk/testbot</a></li>
+		<li>My testbot branch of parallel_specs: <a href="http://github.com/joakimk/parallel_specs/tree/testbot">http://github.com/joakimk/parallel_specs/tree/testbot</a></li>
+		<li>Parallel_specs: <a href="http://github.com/grosser/parallel_specs">http://github.com/grosser/parallel_specs</a></li>
+		<li><a href="https://www.800paydayloans.com/">Payday loans no faxing</a>
+<strong>ca 21:00-</strong>: Diskutera hacket.</li>
+	</ul>
+
+
+	<h2>Anmälda &#8211; namn (nick på #rails.se, Twitter, GitHub, blogg etc), ev. företag</h2>
+
+
+	<p>Inget sista anmälningsdatum, ingen begränsning på antal platser. Ta dock bort dig från listan om du inte kommer så vi kan planera mat och dryck.</p>
+
+
+	<ol>
+	<li><a class="existingWikiWord" href="Albert+Ramstedt.html">Albert Ramstedt</a> &#8211; Bukowskis/Auktionskompaniet</li>
+		<li><a class="existingWikiWord" href="Henrik+Nyh.html">Henrik Nyh</a> (malesca, <a href="http://twitter.com/henrik">Twitter</a>, <a href="http://github.com/henrik">GitHub</a>, <a href="http://henrik.nyh.se">blogg</a>), Bukowskis/Auktionskompaniet</li>
+		<li><a class="existingWikiWord" href="Andreas+Alin.html">Andreas Alin</a> (acetoxy, <a href="http://twitter.com/acetoxy">Twitter</a>, <a href="http://github.com/aalin">GitHub</a>), Bukowskis/Auktionskompaniet</li>
+		<li><a class="existingWikiWord" href="Joakim+Kolsj%C3%B6.html">Joakim Kolsjö</a> (trejs, <a href="http://twitter.com/joakimk">Twitter</a>, <a href="http://github.com/joakimk">GitHub</a>, <a href="http://www.rubyblocks.se">blogg</a>), Bukowskis/Auktionskompaniet</li>
+		<li>Patrik Stenmark</li>
+		<li><a class="existingWikiWord" href="Dennis+Rogenius.html">Dennis Rogenius</a> (denro), <a href="http://www.redvision.se">RedVision</a></li>
+		<li><a class="existingWikiWord" href="Peter+Marklund.html">Peter Marklund</a>, Newsdesk</li>
+		<li><span class="newWikiWord">Henrik Berggren</span> (<a href="http://github.com/hinke">Github</a> <a href="http://twitter.com/henrikberggren">Twitter</a>, <a href="http://linkedin.com/in/hinkeb">LinkedIn</a>, <a href="http://henrikberggren.com">blogg</a>), CitySounds.fm, Doberman</li>
+		<li><span class="newWikiWord">David Kjelkerud</span> (<a href="http://github.com/davidkjelkerud">Github</a> <a href="http://twitter.com/davidkjelkerud">Twitter</a>, <a href="http://se.linkedin.com/in/davidkjelkerud">LinkedIn</a>, <a href="http://david.kjelkerud.se">sajt</a>), CitySounds.fm, Doberman</li>
+		<li><span class="newWikiWord">Kristian Hellquist</span> ( <a href="http://twitter.com/meeiw">Twitter</a>), Menyou</li>
+		<li><span class="newWikiWord">Mathias Stjernström</span>, (<a href="http://github.com/stjernstrom">Github</a> <a href="http://twitter.com/stjernstrom">Twitter</a>, <a href="http://www.pastbedti.me/">blogg</a>) <a href="http://www.globalinn.tv/">Globalinn AB</a></li>
+		<li><span class="newWikiWord">Patrik Hedman</span>, (<a href="http://github.com/polly">Github</a> <a href="http://www.pastbedti.me/">blogg</a>) <a href="http://www.globalinn.tv/">Globalinn AB</a></li>
+		<li><a class="existingWikiWord" href="Fredrik+Br%C3%A4nstr%C3%B6m.html">Fredrik Bränström</a></li>
+		<li>Martin Svalin (<a href="http://twitter.com/martinsvalin/">Twitter</a>)</li>
+		<li><span class="newWikiWord">Martin Ström</span> <br />(<a href="http://www.best-way-to-build-muscle.com/ryan-reynolds-workout/">ryan reynolds diet</a>)<br />(<a href="http://github.com/haraldmartin">Github</a> <a href="http://twitter.com/haraldmartin">Twitter</a>, <a href="http://my-domain.se">site</a>), CopyPasteCharacter.com, pluxemburg.com, <a href="http://linkli.st">linkli.st</a></li>
+		<li><a class="existingWikiWord" href="David+Billskog.html">David Billskog</a></li>
+		<li><span class="newWikiWord">Alexander Aivars</span> (<a href="http://twitter.com/alexaivars/">Twitter</a>), Kramgo</li>
+		<li>Mikael Kindborg (<a href="http://twitter.com/divineprog/">Twitter</a>, <a href="http://divineprogrammer.blogspot.com/">blogg</a>)</li>
+		<li>Daniel Thor (<a href="http://twitter.com/dth/">Twitter</a>, <a href="http://danielthor.info">web</a>) <a href="http://tretti.se">tretti.se</a></li>
+		<li><a class="existingWikiWord" href="Peter+Lind.html">Peter Lind</a> (<a href="http://twitter.com/peter_lind/">Twitter</a>, <a href="http://peter.lind.be">web</a>) <a href="http://www.pockus.se">Pockus</a></li>
+		<li><a class="existingWikiWord" href="Jens+Norrgrann.html">Jens Norrgrann</a> (<a href="http://twitter.com/jensnorr/">Twitter</a>, <a href="http://www.conside.se">Conside Solutions AB</a></li>
+		<li>Martin Frost (Frost)</li>
+		<li><a class="existingWikiWord" href="Peter+Hellberg.html">Peter Hellberg</a> (<a href="http://github.com/c7/">GitHub</a>, <a href="http://twitter.com/peterhellberg/">Twitter</a>, <a href="http://c7.se/">Web</a>), Code7 Interactive, Athega</li>
+		<li><span class="newWikiWord">Kristian Laustsen</span>, 24HR</li>
+		<li><span class="newWikiWord">Anders Asplund</span> (danter, <a href="http://twitter.com/dantertm">Twitter</a>, <a href="http://github.com/danter">GitHub</a>), Royal Institute of Technology/KTH</li>
+		<li><span class="newWikiWord">Mattias Petter Johansson</span>, 24HR</li>
+		<li>Lars Westergren, (<a href="http://twitter.com/wgren/">Twitter.com/wgren</a>) , <a href="http://www.mejsla.se">Mejsla</a></li>
+		<li>Anders Bengtsson (<a href="http://twitter.com/ghostganz">Twitter</a>), Valtech</li>
+		<li>Charles Oliver Nutter (<a href="http://twitter.com/headius">Twitter</a>), <a href="http://www.jruby.org">JRuby Team</a></li>
+		<li>Mikael Granholm (<a href="http://www.merchantos.com">Pos Systems</a>)</li>
+		<li>Joel Borggrén-Franck (<a href="http://twitter.com/joelbf">Twitter</a>)</li>
+		<li>Martin Doktár</li>
+		<li>Karl Eklund (<a href="http://twitter.com/keklund">Twitter</a>, <a href="http://github.com/kek">GitHub</a>)</li>
+		<li>Ippa (<a href="http://github.com/ippa">GitHub</a>)</li>
+		<li>Fredrik Rubensson (<a href="http://twitter.com/froderik">twitter</a>, <a href="http://www.highlevelbits.com">blog</a>)</li>
+		<li>Martin Eriksson (<a href="http://artilect.se">Web</a>, <a href="http://twitter.com/artilect_se">Twitter</a>), Artilect</li>
+		<li>Pascal Chatterjee, Royal Institute of Technology / <span class="caps">KTH </span>Student</li>
+		<li>Niclas Gurell: (<a href="http://www.superiorpapers.com/">Research Papers</a></li>
+		<li>Oskar Holmstrand: (<a href="http://www.metagamerscore.com">http://www.metagamerscore.com</a>) ooops&#8230; det va visst 2010</li>
+		<li>Linda Kratz: (<a href="http://www.metagamerscore.com">http://www.metagamerscore.com</a>)</li>
+	</ol>
+          <div class="byline">
+            Revised on January 10, 2013 09:46:08
+            by
+            <a class="existingWikiWord" href="Peter+Lind.html">Peter Lind</a>
+          </div>
+        </body>
+        </html>

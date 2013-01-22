@@ -1,0 +1,488 @@
+        <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+          <title>SHRUG 25 Oktober 2010 in rails.se</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+          <style type="text/css">
+            h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+              color: #008B26; 
+            }
+            .newWikiWord { background-color: white; font-style: italic; }
+            body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+          </style>
+          <style type="text/css">
+            
+          </style>
+        </head>
+        <body>
+          <h1>SHRUG-möte 25 Oktober 2010</h1>
+
+
+	<h2>Plats</h2>
+
+
+	<p><a href="http://maps.google.com/maps/ms?ie=UTF&#38;msa=0&#38;msid=117732895714075224862.00049143350afb47a91e3">Bondegatan 21</a> (t-bana Medborgarplatsen), hos <a href="http://www.mediapilot.se">MediaPilot</a></p>
+
+
+	<h2>Tid</h2>
+
+
+	<p>18:00 den 25:e Oktober</p>
+
+
+	<h2>Program</h2>
+
+
+	<ul>
+	<li>Creating RubyGems (with streamio-ffmpeg as an example) &#8211; <a class="existingWikiWord" href="David+Backeus.html">David Backeus</a> (Streamio), 15 min</li>
+		<li>Minimizing Library Dependencies &#8211; <a class="existingWikiWord" href="Peter+Marklund.html">Peter Marklund</a>, 15 min</li>
+		<li>Bensträckare (10 min)</li>
+		<li>The Front End Testing Frontier &#8211; <a class="existingWikiWord" href="Carl-Johan+Kihlbom.html">Carl-Johan Kihlbom</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>), 15 min</li>
+		<li>Mingel med dryck och tilltugg</li>
+	</ul>
+
+
+	<h2>Deltagare</h2>
+
+
+	<ol>
+	<li><a class="existingWikiWord" href="Ingemar+Edsborn.html">Ingemar Edsborn</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><a class="existingWikiWord" href="Carl-Johan+Kihlbom.html">Carl-Johan Kihlbom</a> (<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><a class="existingWikiWord" href="Dennis+Rogenius.html">Dennis Rogenius</a>(<a class="existingWikiWord" href="Elabs.html">Elabs</a>)</li>
+		<li><a class="existingWikiWord" href="David+Backeus.html">David Backeus</a></li>
+		<li><a class="existingWikiWord" href="Peter+Marklund.html">Peter Marklund</a></li>
+		<li><a class="existingWikiWord" href="Jens+Norrgrann.html">Jens Norrgrann</a></li>
+		<li><a class="existingWikiWord" href="Richard+Johansson.html">Richard Johansson</a> (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Joakim+Westerlund.html">Joakim Westerlund</a> (MyNewsdesk)</li>
+		<li><a class="existingWikiWord" href="Albert+Ramstedt.html">Albert Ramstedt</a> (Bukowskis)</li>
+		<li><a class="existingWikiWord" href="David+Billskog.html">David Billskog</a></li>
+		<li><span class="newWikiWord">Mikael Granholm</span></li>
+		<li><span class="newWikiWord">Martin Frost</span></li>
+		<li><a class="existingWikiWord" href="Andrew+Crookston.html">Andrew Crookston</a> (Athega)</li>
+		<li><span class="newWikiWord">Patrik Stenmark</span></li>
+		<li><a class="existingWikiWord" href="Andreas+Alin.html">Andreas Alin</a> (Bukowskis)</li>
+		<li><a class="existingWikiWord" href="Henrik+Nyh.html">Henrik Nyh</a> (Bukowskis)</li>
+		<li><span class="newWikiWord">Mårten Nilsson</span> (MyNewsdesk)</li>
+		<li><span class="newWikiWord">Pop Qvarnström</span></li>
+		<li><span class="newWikiWord">Karl Eklund</span></li>
+		<li><a class="existingWikiWord" href="Daniel+Thor.html">Daniel Thor</a></li>
+		<li><a class="existingWikiWord" href="Joakim+Kolsj%C3%B6.html">Joakim Kolsjö</a> (Bukowskis)</li>
+		<li><span class="newWikiWord">Lars Westergren</span></li>
+		<li><a class="existingWikiWord" href="Anders+Bengtsson.html">Anders Bengtsson</a> (Valtech)</li>
+		<li><a class="existingWikiWord" href="Brian+Riddle.html">Brian Riddle</a></li>
+		<li><a class="existingWikiWord" href="Simon+Lundstr%C3%B6m.html">Simon Lundström</a></li>
+		<li><a class="existingWikiWord" href="Per+%C3%85str%C3%B6m.html">Per Åström</a></li>
+		<li><a class="existingWikiWord" href="Peter+Hellberg.html">Peter Hellberg</a> (Athega)</li>
+		<li><a class="existingWikiWord" href="Jonas+Grimfelt.html">Jonas Grimfelt</a></li>
+		<li><a class="existingWikiWord" href="Fredrik+Rubensson.html">Fredrik Rubensson</a></li>
+		<li><span class="newWikiWord">Joel Borggren-Franck</span></li>
+		<li><a class="existingWikiWord" href="David+Hall.html">David Hall</a></li>
+		<li><a class="existingWikiWord" href="Martin+Svalin.html">Martin Svalin</a> (MyNewsdesk)</li>
+		<li><span class="newWikiWord">Giulio Mola</span></li>
+		<li><a class="existingWikiWord" href="Soroush+Hakami.html">Soroush Hakami</a></li>
+		<li><span class="newWikiWord">Anders Nguyen</span></li>
+		<li><a class="existingWikiWord" href="Johan+Lundstr%C3%B6m.html">Johan Lundström</a></li>
+		<li><span class="newWikiWord">Bence Vajda</span></li>
+		<li><span class="newWikiWord">Alexander Aivars</span></li>
+		<li><span class="newWikiWord">Matti Kotsalainen</span></li>
+		<li><a class="existingWikiWord" href="Anton+Lindqvist.html">Anton Lindqvist</a></li>
+		<li><a class="existingWikiWord" href="Fredrik+Br%C3%A4nstr%C3%B6m.html">Fredrik Bränström</a></li>
+		<li><span class="newWikiWord">Alexi Rahman</span> (Valtech)</li>
+		<li><span class="newWikiWord">Marthin Freij</span></li>
+		<li><span class="newWikiWord">Jan Andersson</span> (Travel Partner)</li>
+		<li><a class="existingWikiWord" href="KristianHellquist.html">KristianHellquist</a> (Travelpartner)</li>
+		<li><span class="newWikiWord">David Engstrand</span></li>
+		<li><a class="existingWikiWord" href="Jakob+Rasmussen.html">Jakob Rasmussen</a></li>
+		<li><a class="existingWikiWord" href="Johan+Lind.html">Johan Lind</a></li>
+		<li><a class="existingWikiWord" href="Jonas+Forsberg.html">Jonas Forsberg</a> (MyNewsdesk)</li>
+		<li><span class="newWikiWord">Marcus Ahnve</span></li>
+		<li><span class="newWikiWord">Martin Ström</span></li>
+		<li><span class="newWikiWord">Simon Andersson</span></li>
+		<li><a class="existingWikiWord" href="Andreas+W%C3%A5lm.html">Andreas Wålm</a></li>
+		<li><span class="newWikiWord">Mattias Petter Johansson</span></li>
+		<li><span class="newWikiWord">Robbin Edgren</span></li>
+		<li><span class="newWikiWord">Jens Berlips</span></li>
+		<li><span class="newWikiWord">Daniel Abrahamsson</span></li>
+		<li><span class="newWikiWord">Daniel Lidström</span></li>
+		<li><span class="newWikiWord">Henrik Röschmann</span></li>
+		<li><span class="newWikiWord">Matti Kotsalainen</span></li>
+		<li><span class="newWikiWord">Linus Sellberg</span></li>
+		<li><span class="newWikiWord">Rasmus Sellberg</span></li>
+		<li><span class="newWikiWord">Anders Arpteg</span> (Testfreaks)</li>
+		<li><span class="newWikiWord">Ludvig Omholt</span> (Testfreaks)</li>
+		<li><span class="newWikiWord">Einar Andersson</span> (Soundation)</li>
+		<li><span class="newWikiWord">Arvid Andersson</span> (Winston Design)</li>
+		<li><a class="existingWikiWord" href="Peter+K%C3%B6rdel.html">Peter Kördel</a> (Kordel Systems)</li>
+		<li><span class="newWikiWord">Tobias Wallin</span> (Handelsoasen)</li>
+		<li><span class="newWikiWord">Leo Ryberg</span>(Handelsoasen)</li>
+		<li><span class="newWikiWord">Alexander Bystedt</span> (Bukowskis)</li>
+		<li><span class="newWikiWord">Niklas Holmgren</span></li>
+		<li><span class="newWikiWord">Alexis Fellenius</span> (Winston Design)</li>
+		<li><span class="newWikiWord">David Wennergren</span> (MyNewsdesk)</li>
+	</ol>
+
+
+	<h2>Länkar</h2>
+
+
+	<ul>
+	<li>Code for Elabs presentation: <a href="http://github.com/elabs/front_end_testing">http://github.com/elabs/front_end_testing</a></li>
+		<li>Bukowskis job ad: <a href="http://railsjobb.se/jobb/46-ruby-railsutvecklare-sokes-till-anrikt-auktionsforetag-i-stockholm-stockholm">http://railsjobb.se/jobb/46-ruby-railsutvecklare-sokes-till-anrikt-auktionsforetag-i-stockholm-stockholm</a></li>
+		<li>Bukowskis testbot presentation: </li>
+		<li><a href="http://dl.dropbox.com/u/136929/shrug_oct2010/index.html">http://dl.dropbox.com/u/136929/shrug_oct2010/index.html</a> / <a href="http://github.com/joakimk/presentations/tree/master/shrug_oct2010_sideprojects">http://github.com/joakimk/presentations/tree/master/shrug_oct2010_sideprojects</a></li>
+		<li>Testbot <a href="http://github.com/joakimk/testbot">http://github.com/joakimk/testbot</a></li>
+		<li><a href="http://github.com/peter/presentation_library_dependencies">Minimizing Library Dependencies</a> &#8211; <a href="http://marklunds.com/s5/library_dependencies/html/all.html">slides</a></li>
+		<li><a href="http://picasaweb.google.com/peter.vilhelm.hellberg/SHRUGMote25Oktober2010">Några bilder från kvällen</a></li>
+	</ul>
+          <div class="byline">
+            Revised on October 31, 2010 16:34:13
+            by
+            <a class="existingWikiWord" href="Peter+Hellberg.html">Peter Hellberg</a>
+          </div>
+        </body>
+        </html>
