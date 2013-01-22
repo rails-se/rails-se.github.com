@@ -119,6 +119,17 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
      </ul>
   </li>
+  
+  <li>
+    <a href="http://onegiantleap.se">One Giant Leap</a>
+    <ul>
+      <li>
+        Tim Heighes
+        {% assign twitter = 'sauy7' %}{% include twitter.html %}
+        {% assign github = 'sauy7' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
 
   <li>
     <a href="http://www.thoughtbot.com/">Thoughtbot</a>
