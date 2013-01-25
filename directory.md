@@ -46,7 +46,21 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
     </ul>
   </li>
-
+  
+  <li>
+    <a href="http://www.twingly.com">Twingly</a>
+    {% assign github = 'Twingly' %}{% include github.html %}
+    <ul>
+      <li>
+        Johan Eckerström
+        {% assign github = 'jage' %}{% include github.html %}
+      </li>
+      <li>
+        Magnus Hörberg
+        {% assign github = 'magnushoerberg' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
 </ul>
 
 ## Stockholm
