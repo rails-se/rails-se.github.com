@@ -25,6 +25,30 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 
 </ul>
 
+## Linköping
+
+<ul>
+
+  <li>
+    <a href="http://www.euronetics.se">Euronetics</a>
+    <ul>
+      <li>
+        Anton Hedström
+      </li>
+      <li>
+        Anton Holmgren
+        {% assign github = 'alksl' %}{% include github.html %}
+      </li>
+      <li>
+        Patrik Ragnarsson
+        {% assign twitter = 'dentarg_' %}{% include twitter.html %}
+        {% assign github = 'dentarg' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+
+</ul>
+
 ## Stockholm
 
 <ul>
