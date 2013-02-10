@@ -168,6 +168,17 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
     </ul>
   </li>
+  
+  <li>
+    <a href="http://www.promoterapp.com">Promoter</a>
+    <ul>
+      <li>
+        Andreas Zecher
+        {% assign twitter = 'andreaszecher' %}{% include twitter.html %}
+        {% assign github = 'pixelate' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
 
   <li>
     <a href="http://www.thoughtbot.com/">Thoughtbot</a>
