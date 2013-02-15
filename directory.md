@@ -197,7 +197,22 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 ## Sundsvall
 
 <ul>
-
+<li>
+    <a href="http://mittmedia.se">MittMedia</a>
+    <ul>
+      <li>Anders Härén</li>
+      <li>Andreas Svanberg</li>
+      <li>
+        Erik Nordlund
+        {% assign twitter = 'nerikj' %}{% include twitter.html %}
+        {% assign github = 'eriknordlund' %}{% include github.html %}
+      </li>
+      <li>Fredrik Sundström</li>
+      <li>Magnus Engström</li>
+      <li>Roger Nyström</li>
+      <li>Tony Klintasp</li>
+     </ul>
+  </li>
 <li>
     <a href="http://savecore.se">Savecore</a>
     <ul>
@@ -208,5 +223,4 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
      </ul>
   </li>
-
 </ul>
