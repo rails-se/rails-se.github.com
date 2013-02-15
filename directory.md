@@ -33,7 +33,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   <li>
     <a href="http://mittmedia.se">MittMedia</a>
     <ul>
-      <li>Fredrik Sundström</li>
+      <li>
+        Fredrik Sundström
+        {% assign twitter = 'designfredrik' %}{% include twitter.html %}
+        {% assign github = 'fredriksundstrom' %}{% include github.html %}  
+      </li>
       <li>Magnus Engström</li>
      </ul>
   </li>
