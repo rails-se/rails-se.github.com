@@ -15,7 +15,7 @@ layout: default
 * [Mailinglista](http://groups.google.com/group/rails-se)
 * [IRC: #rails.se@Freenode](irc://irc.freenode.org/rails.se)
 
-## Annat
+## Resurser
 
 * [Tips för svenska applikationer](/tips)
 * [Team, projekt och utvecklare](/directory)
