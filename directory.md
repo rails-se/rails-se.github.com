@@ -248,3 +248,18 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
      </ul>
   </li>
 </ul>
+
+## USA/Stockholm
+
+<ul>
+  <li>
+    <a href="http://hashrocket.com/">Hashrocket</a>
+    <ul>
+      <li>
+        Ingemar Edsborn
+        {% assign twitter = 'ingmr' %}{% include twitter.html %}
+        {% assign github = 'ingemar' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+</ul>
