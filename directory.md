@@ -53,6 +53,21 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 
 </ul>
 
+## Karlstad
+
+<ul>
+  <li>
+  <a href="http://xlent.se">XLENT</a>
+  <ul>
+    <li>
+      Richard Nyström
+      {% assign twitter = 'richardnystrom' %}{% include twitter.html %}
+      {% assign github = 'ricn' %}{% include github.html %}
+    </li>
+  </ul>
+  </li>
+</ul
+
 ## Linköping
 
 <ul>
