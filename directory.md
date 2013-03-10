@@ -66,7 +66,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
     </li>
   </ul>
   </li>
-</ul
+</ul>
 
 ## Linköping
 
