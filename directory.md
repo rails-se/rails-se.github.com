@@ -176,7 +176,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign github = 'martinsvalin' %}{% include github.html %}
       </li>
       <li>Richard Johansson</li>
-      <li>Teo Ljungberg</li>
+      <li>
+        Teo Ljungberg
+        {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
+        {% assign github = 'metamorfos' %}{% include github.html %}
+      </li>
     </ul>
   </li>
 
