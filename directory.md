@@ -137,7 +137,22 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   <li>
     <a href="http://www.hemnet.se">Hemnet</a>
   </li>
-
+  <li>
+    <a href="http://www.kollegorna.se">Kollegorna</a>
+    <ul>
+      <li>
+        <a href="http://henriksjokvist.net">Henrik Sjökvist</a>
+        {% assign twitter = 'henrrrik' %}{% include twitter.html %}
+        {% assign github = 'henrrrik' %}{% include github.html %}
+      </li>
+      <li>
+        <a href="http://www.helloper.com">Per Sandström</a>
+          {% assign twitter = 'persand' %}{% include twitter.html %}
+          {% assign github = 'persand' %}{% include github.html %}
+      </li>
+      <li>Joakim Lundberg</li>
+    </ul>
+  </li>
   <li>
     <a href="http://www.magplus.com">Mag+</a>
   </li>
