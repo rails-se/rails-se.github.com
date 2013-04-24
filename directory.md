@@ -111,6 +111,21 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 <ul>
 
   <li>
+    <a href="http://www.apoex.se.">ApoEx</a>
+    <ul>
+      <li>Andreas Karlsson</li>
+      <li>Daniel Swärd</li>
+      <li>Frans Krojegård</li>
+      <li>Fredrik Bränström</li>
+      <li>Jens Berlips</li>
+      <li>Johan Lundström</li>
+      <li>Martin Larsson></li>
+      <li>Mathias Klippinge</li>
+      <li>Michael Litton</li>
+    </ul>
+  </li>
+
+  <li>
     <a href="http://barsoom.se">Barsoom</a>
     <ul>
       <li>Albert Ramstedt</li>
