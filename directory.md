@@ -119,7 +119,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>Fredrik Bränström</li>
       <li>Jens Berlips</li>
       <li>Johan Lundström</li>
-      <li>Martin Larsson></li>
+      <li>Martin Larsson</li>
       <li>Mathias Klippinge</li>
       <li>Michael Litton</li>
     </ul>
