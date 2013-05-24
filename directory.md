@@ -266,7 +266,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
   <li>
-    <a herf="http://utales.com/">uTales</a>
+    <a href="http://utales.com/">uTales</a>
   </li>
 
   <li>
