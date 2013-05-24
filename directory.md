@@ -126,6 +126,10 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
   <li>
+    <a href="https://baraspara.se/">Baraspara.se</a>
+  </li>
+
+  <li>
     <a href="http://barsoom.se">Barsoom</a>
     <ul>
       <li>Albert Ramstedt</li>
