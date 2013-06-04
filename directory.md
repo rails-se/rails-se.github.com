@@ -157,6 +157,9 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
     <a href="http://www.hemnet.se">Hemnet</a>
   </li>
   <li>
+    <a href="http://www.jmkplay.se">JMK, Stockholms universitet</a>
+  </li>
+  <li>
     <a href="http://www.kollegorna.se">Kollegorna</a>
     <ul>
       <li>
