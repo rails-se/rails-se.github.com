@@ -265,7 +265,14 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
   <li>
-    <a href="http://www.thoughtbot.com/">Thoughtbot</a>
+    <a href="http://www.thoughtbot.com/">thoughtbot</a>
+    <ul>
+      <li>
+        <a href="http://georgebrock.com">George Brocklehurst</a>
+        {% assign twitter = 'georgebrock' %}{% include twitter.html %}
+        {% assign github = 'georgebrock' %}{% include github.html %}
+      </li>
+    </ul>
   </li>
 
   <li>
