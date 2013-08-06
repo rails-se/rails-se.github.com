@@ -82,11 +82,6 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         Anton Holmgren
         {% assign github = 'alksl' %}{% include github.html %}
       </li>
-      <li>
-        Patrik Ragnarsson
-        {% assign twitter = 'dentarg_' %}{% include twitter.html %}
-        {% assign github = 'dentarg' %}{% include github.html %}
-      </li>
     </ul>
   </li>
   
@@ -101,6 +96,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>
         Magnus Hörberg
         {% assign github = 'magnushoerberg' %}{% include github.html %}
+      </li>
+      <li>
+        Patrik Ragnarsson
+        {% assign twitter = 'dentarg_' %}{% include twitter.html %}
+        {% assign github = 'dentarg' %}{% include github.html %}
       </li>
     </ul>
   </li>
