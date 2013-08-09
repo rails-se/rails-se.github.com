@@ -214,9 +214,9 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
       <li>Richard Johansson</li>
       <li>
-        Teo Ljungberg
+        <a href="http://teoljungberg.com">Teo Ljungberg</a>
         {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
-        {% assign github = 'metamorfos' %}{% include github.html %}
+        {% assign github = 'teoljungberg' %}{% include github.html %}
       </li>
     </ul>
   </li>
