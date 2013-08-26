@@ -60,7 +60,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   <a href="http://xlent.se">XLENT</a>
   <ul>
     <li>
-      Richard Nyström
+      <a href="http://rny.io/">Richard Nyström</a>
       {% assign twitter = 'richardnystrom' %}{% include twitter.html %}
       {% assign github = 'ricn' %}{% include github.html %}
     </li>
