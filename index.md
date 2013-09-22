@@ -8,7 +8,7 @@ layout: default
 * [Stockholm Ruby](http://stockholmruby.com)
 * [Bandhagen: BRUG](http://brug.se/)
 * [Göteborg: Got.rb](http://www.meetup.com/got-rb)
-* [Malmö: Malmö.rb](http://malmorb.se/)
+* [Malmö.rb](http://malmorb.se/)
 
 ## Diskussioner
 
