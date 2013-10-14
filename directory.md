@@ -265,12 +265,22 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 
   <li>
-    <a href="http://www.thoughtbot.com/">thoughtbot</a>
+    <a href="http://www.thoughtbot.se/">thoughtbot</a>
     <ul>
+      <li>
+        <a href="http://arun.im/">Arun Agrawal</a>
+        {% assign twitter = 'arunagw' %}{% include twitter.html %}
+        {% assign github = 'arunagw' %}{% include github.html %}
+      </li>
       <li>
         <a href="http://georgebrock.com">George Brocklehurst</a>
         {% assign twitter = 'georgebrock' %}{% include twitter.html %}
         {% assign github = 'georgebrock' %}{% include github.html %}
+      </li>
+      <li>
+        <a href="http://mike-burns.com/">Mike Burns</a>
+        {% assign twitter = 'mikeburns' %}{% include twitter.html %}
+        {% assign github = 'mike-burns' %}{% include github.html %}
       </li>
     </ul>
   </li>
