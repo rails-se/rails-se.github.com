@@ -182,8 +182,8 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   <li>
     <a href="http://www.mynewsdesk.com">Mynewsdesk</a>
     <ul>
+      <li>Alex Sergeyev</li>
       <li>David Billskog</li>
-      <li>David Wennergren</li>
       <li>Emil Löfquist</li>
       <li>Hilla Duka
         {% assign twitter = 'hilladuka' %}{% include twitter.html %}
@@ -196,7 +196,12 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>
         <a href="http://joakim-westerlund.se">Joakim Wersterlund</a>
         {% assign twitter = 'joakwest' %}{% include twitter.html %}
-        {% assign github = 'jorkas' %}{% include github.html %}  
+        {% assign github = 'jorkas' %}{% include github.html %}
+      </li>
+      <li>
+        <a href="http://dribbble.com/joelhelin">Jonny Strömberg</a>
+        {% assign twitter = 'joelhelin' %}{% include twitter.html %}
+        {% assign github = 'joelhelin' %}{% include github.html %}
       </li>
       <li>
         <a href="http://jonasforsberg.se">Jonas Forsberg</a>
@@ -215,12 +220,13 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'martinsvalin' %}{% include twitter.html %}
         {% assign github = 'martinsvalin' %}{% include github.html %}
       </li>
-      <li>Richard Johansson</li>
       <li>
         <a href="http://teoljungberg.com">Teo Ljungberg</a>
         {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
         {% assign github = 'teoljungberg' %}{% include github.html %}
       </li>
+      <li>Yu Wang</li>
+      <li>Zoee Silcock</li>
     </ul>
   </li>
 
