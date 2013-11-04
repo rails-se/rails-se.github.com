@@ -51,6 +51,16 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
     <a href="http://elabs.se">Elabs</a>
   </li>
 
+  <li>
+  <a href="http://kyparn.se">Kyparn.se</a>
+  <ul>
+    <li>
+      <a href="http://mattiassvedhem.com/">Mattias Svedhem</a>
+      {% assign twitter = 'mattiassvedhem' %}{% include twitter.html %}
+      {% assign github = 'mattiassvedhem' %}{% include github.html %}
+    </li>
+  </ul>
+  </li>
 </ul>
 
 ## Karlstad
