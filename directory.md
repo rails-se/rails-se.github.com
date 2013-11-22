@@ -41,6 +41,16 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>Magnus Engström</li>
      </ul>
   </li>
+  <li>
+    <a>FSH Sweden AB</a>
+    <ul>
+      <li>
+        Peter Andersson
+        {% assign twitter = 'fshsweden' %}{% include twitter.html %}
+        {% assign github = 'fshsweden' %}{% include github.html %}  
+      </li>
+     </ul>
+  </li>
 </ul>
 
 ## Göteborg
