@@ -23,4 +23,4 @@ title: Tips för svenska applikationer
 
 ## Meta
 
-* [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/resources.md)
+* [Ändra på den här sidan](https://github.com/rails-se/rails-se.github.com/edit/master/tips.md)
