@@ -13,6 +13,8 @@ title: Tips för svenska applikationer
   <br>Översätt modellattribut i annan tabell.
 * [banktools-se](https://github.com/barsoom/banktools-se)
   <br>Validera och normalisera svenska kontonummer, plusgiro och bankgiro.
+* [SIE gem](https://github.com/barsoom/sie)
+  <br>Exportera och importera SIE-filer för svensk bokföring.
 
 ## Läsning
 
