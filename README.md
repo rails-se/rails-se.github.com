@@ -10,7 +10,7 @@ Either make a pull request or ask [an organization owner](https://github.com/rai
 
 ```
 gem install jekyll
-jekyll --auto --server
+jekyll serve --watch
 ```
 
 Open <http://localhost:4000>.
