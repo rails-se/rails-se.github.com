@@ -171,6 +171,13 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
 
   <li>
     <a href="http://bukowskis.com">Bukowskis</a>
+    <ul>
+      <li>
+        Daniel Eriksson
+        {% assign twitter = 'danieleriksson' %}{% include twitter.html %}
+        {% assign github = 'daniel' %}{% include github.html %}
+      </li>
+    </ul>
   </li>
 
   <li>
