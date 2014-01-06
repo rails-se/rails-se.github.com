@@ -164,7 +164,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'joakimk' %}{% include twitter.html %}
         {% assign github = 'joakimk' %}{% include github.html %}
       </li>
-      <li>Kim Persson</li>
+      <li>
+        Kim Persson
+        {% assign twitter = 'Lavinia666' %}{% include twitter.html %}
+        {% assign github = 'Lavinia' %}{% include github.html %}
+      </li>
       <li>Tomas Skogberg</li>
     </ul>
   </li>
@@ -204,6 +208,28 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
   <li>
     <a href="http://www.magplus.com">Mag+</a>
+    <ul>
+      <li>
+        Dennis Rogenius
+        {% assign twitter = 'denro' %}{% include twitter.html %}
+        {% assign github = 'denro' %}{% include github.html %}
+      </li>
+      <li>
+        Karl Eklund
+        {% assign twitter = 'keklund' %}{% include twitter.html %}
+        {% assign github = 'kek' %}{% include github.html %}
+      </li>
+      <li>
+        Lennart Fridén
+        {% assign twitter = 'DevLCSC' %}{% include twitter.html %}
+        {% assign github = 'DevL' %}{% include github.html %}
+      </li>
+      <li>
+        Mikael Amborn
+        {% assign twitter = 'mikaelamborn' %}{% include twitter.html %}
+        {% assign github = 'mikaelamborn' %}{% include github.html %}
+      </li>
+    </ul>
   </li>
 
   <li>
