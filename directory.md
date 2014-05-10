@@ -400,6 +400,17 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
   </li>
 </ul>
 
+## Växjö
+
+<ul>
+  <li>
+    <a href="http://sandeli.us">Tobias Sandelius</a>
+    {% assign twitter = 'sandelius' %}{% include twitter.html %}
+    {% assign github = 'sandelius' %}{% include github.html %}
+  </li>
+</ul>
+
+
 ## USA/Stockholm
 
 <ul>
