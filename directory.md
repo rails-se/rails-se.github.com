@@ -36,7 +36,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>
         Fredrik Sundström
         {% assign twitter = 'designfredrik' %}{% include twitter.html %}
-        {% assign github = 'fredriksundstrom' %}{% include github.html %}  
+        {% assign github = 'fredriksundstrom' %}{% include github.html %}
       </li>
       <li>Magnus Engström</li>
      </ul>
@@ -47,7 +47,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       <li>
         Peter Andersson
         {% assign twitter = 'fshsweden' %}{% include twitter.html %}
-        {% assign github = 'fshsweden' %}{% include github.html %}  
+        {% assign github = 'fshsweden' %}{% include github.html %}
       </li>
      </ul>
   </li>
@@ -104,7 +104,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
     </ul>
   </li>
-  
+
   <li>
     <a href="http://www.twingly.com">Twingly</a>
     {% assign github = 'Twingly' %}{% include github.html %}
@@ -243,6 +243,8 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
     <a href="http://www.mynewsdesk.com">Mynewsdesk</a>
     <ul>
       <li>Alex Sergeyev</li>
+      <li>Alexander Woll</li>
+      <li>David Backéus</li>
       <li>Emil Löfquist</li>
       <li>Hilla Duka
         {% assign twitter = 'hilladuka' %}{% include twitter.html %}
@@ -267,20 +269,13 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
         {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
         {% assign github = 'himynameisjonas' %}{% include github.html %}
       </li>
-      <li>
-        <a href="http://jonnystromberg.com">Jonny Strömberg</a>
-        {% assign twitter = 'javve' %}{% include twitter.html %}
-        {% assign github = 'javve' %}{% include github.html %}
-      </li>
       <li>Kristian Hellquist</li>
-      <li>Maja Lindström</li>
       <li>Markus Nordin</li>
       <li>
         Martin Svalin
         {% assign twitter = 'martinsvalin' %}{% include twitter.html %}
         {% assign github = 'martinsvalin' %}{% include github.html %}
       </li>
-      <li>Ola Nygren</li>
       <li>
         <a href="http://teoljungberg.com">Teo Ljungberg</a>
         {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
@@ -315,7 +310,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
      </ul>
   </li>
-  
+
   <li>
     <a href="http://onegiantleap.se">One Giant Leap</a>
     <ul>
@@ -326,7 +321,7 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
       </li>
     </ul>
   </li>
-  
+
   <li>
     <a href="http://www.promoterapp.com">Promoter</a>
     <ul>
