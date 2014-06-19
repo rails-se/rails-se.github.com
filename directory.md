@@ -403,6 +403,11 @@ Se även [förteckningen på Working with Rails](http://www.workingwithrails.com
     {% assign twitter = 'sandelius' %}{% include twitter.html %}
     {% assign github = 'sandelius' %}{% include github.html %}
   </li>
+  <li>
+    <a href="http://midnightoil.se/">Layla Alvey</a>
+    {% assign twitter = 'NiteOL' %}{% include twitter.html %}
+    {% assign github = 'codinatrix' %}{% include github.html %}
+  </li>
 </ul>
 
 
