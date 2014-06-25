@@ -15,6 +15,8 @@ title: Tips för svenska applikationer
   <br>Validera och normalisera svenska kontonummer, plusgiro och bankgiro.
 * [SIE gem](https://github.com/barsoom/sie)
   <br>Exportera och importera SIE-filer för svensk bokföring.
+* [Bilvision](https://github.com/sandelius/bilvision)
+  <br>Hämtar bildata från Bilvisions API.
 
 ## Läsning
 
