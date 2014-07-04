@@ -5,8 +5,6 @@ title: Team, projekt och utvecklare
 
 Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se.github.com/edit/master/directory.md) er själva.
 
-Se även [förteckningen på Working with Rails](http://www.workingwithrails.com/browse/people/country/Sweden).
-
 <!--
 
   Håll gärna bokstavsordning på orter, sen team, sen personer (förnamn, sen efternamn).
