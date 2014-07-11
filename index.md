@@ -22,7 +22,6 @@ layout: default
 
 ## Legacy
 
-* [Den gamla Wiki-sidan](http://old.rails.se/rails/show/HomePage)
 * [Spamrensade sidor från den gamla Wiki-sidan på github pages](/rails/show/HomePage.html)
 
 ## Meta
