@@ -195,7 +195,12 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
           {% assign twitter = 'persand' %}{% include twitter.html %}
           {% assign github = 'persand' %}{% include github.html %}
       </li>
-      <li>Joakim Lundberg</li>
+      <li>Samuel Carlsson
+        {% assign github = 'ksamc' %}{% include github.html %}
+      </li>
+      <li>Filippos Vasilakis
+        {% assign github = 'vasilakisfil' %}{% include github.html %}
+      </li>
     </ul>
   </li>
   <li>
