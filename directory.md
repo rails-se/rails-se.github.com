@@ -345,6 +345,21 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 
   <li>
+    <a href="http://www.triceimaging.com/">Trice Imaging</a>
+    <ul>
+      <li>
+        <a href="http://eimermusic.com/">Martin Westin</a>
+        {% assign twitter = 'eimer' %}{% include twitter.html %}
+        {% assign github = 'eimermusic' %}{% include github.html %}
+      </li>
+      <li>
+        John Axel Eriksson
+        {% assign github = 'johnae' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+
+  <li>
     <a href="http://www.tv4.se/">TV4</a>
   </li>
 
