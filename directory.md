@@ -255,7 +255,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign github = 'joelhelin' %}{% include github.html %}
       </li>
       <li>
-        <a href="http://jonasforsberg.se">Jonas Forsberg</a>
+        <a href="http://jonasforsberg.se">Jonas Brusman</a>
         {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
         {% assign github = 'himynameisjonas' %}{% include github.html %}
       </li>
