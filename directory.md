@@ -204,6 +204,16 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     </ul>
   </li>
   <li>
+    <a href="http://mediapilot.se">mediapilot</a>
+    <ul>
+      <li>
+        Tim Heighes
+        {% assign twitter = 'sauy7' %}{% include twitter.html %}
+        {% assign github = 'sauy7' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+  <li>
     <a href="http://www.magplus.com">Mag+</a>
     <ul>
       <li>
@@ -340,6 +350,17 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         <a href="http://mike-burns.com/">Mike Burns</a>
         {% assign twitter = 'mikeburns' %}{% include twitter.html %}
         {% assign github = 'mike-burns' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <a href="https://travellersmatch.com">Travellersmatch</a>
+    <ul>
+      <li>
+        Tim Heighes
+        {% assign twitter = 'sauy7' %}{% include twitter.html %}
+        {% assign github = 'sauy7' %}{% include github.html %}
       </li>
     </ul>
   </li>
