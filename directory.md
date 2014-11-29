@@ -264,11 +264,6 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign twitter = 'joelhelin' %}{% include twitter.html %}
         {% assign github = 'joelhelin' %}{% include github.html %}
       </li>
-      <li>
-        <a href="http://jonasforsberg.se">Jonas Brusman</a>
-        {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
-        {% assign github = 'himynameisjonas' %}{% include github.html %}
-      </li>
       <li>Kristian Hellquist</li>
       <li>Markus Nordin</li>
       <li>
@@ -329,6 +324,23 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         Andreas Zecher
         {% assign twitter = 'andreaszecher' %}{% include twitter.html %}
         {% assign github = 'pixelate' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <a href="http://www.teamtailor.com">Teamtailor</a>
+    <ul>
+      <li>
+        David Wennergren
+      </li>
+      <li>
+        <a href="http://jonasforsberg.se">Jonas Brusman</a>
+        {% assign twitter = 'himynameisjonas' %}{% include twitter.html %}
+        {% assign github = 'himynameisjonas' %}{% include github.html %}
+      </li>
+      <li>
+        Richard Johansson
       </li>
     </ul>
   </li>
