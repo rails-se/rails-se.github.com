@@ -271,11 +271,6 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign twitter = 'martinsvalin' %}{% include twitter.html %}
         {% assign github = 'martinsvalin' %}{% include github.html %}
       </li>
-      <li>
-        <a href="http://teoljungberg.com">Teo Ljungberg</a>
-        {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
-        {% assign github = 'teoljungberg' %}{% include github.html %}
-      </li>
       <li>Yu Wang</li>
       <li>
         <a href="http://zoeetrope.com">Zoee Silcock</a>
@@ -363,9 +358,14 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign twitter = 'mikeburns' %}{% include twitter.html %}
         {% assign github = 'mike-burns' %}{% include github.html %}
       </li>
+      <li>
+        <a href="http://teoljungberg.com">Teo Ljungberg</a>
+        {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
+        {% assign github = 'teoljungberg' %}{% include github.html %}
+      </li>
     </ul>
   </li>
-  
+
   <li>
     <a href="https://travellersmatch.com">Travellersmatch</a>
     <ul>
