@@ -180,6 +180,9 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     <a href="http://www.hemnet.se">Hemnet</a>
   </li>
   <li>
+    <a href="http://www.itsinthenode.com">Its in the Node</a>
+  </li>
+  <li>
     <a href="http://www.jmkplay.se">JMK, Stockholms universitet</a>
   </li>
   <li>
