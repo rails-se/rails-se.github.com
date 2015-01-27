@@ -71,6 +71,21 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 </ul>
 
+## Karlskrona
+
+<ul>
+  <li>
+  <a href="http://modondo.com">Modondo</a>
+  <ul>
+    <li>
+      <a href="http://jorgennilsson.com/">Jörgen Nilsson</a>
+      {% assign twitter = 'coffeepunk' %}{% include twitter.html %}
+      {% assign github = 'coffeepunk' %}{% include github.html %}
+    </li>
+  </ul>
+  </li>
+</ul>
+
 ## Karlstad
 
 <ul>
