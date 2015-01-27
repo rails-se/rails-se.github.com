@@ -339,6 +339,8 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       </li>
       <li>
         Richard Johansson
+        {% assign twitter = 'richardjohansso' %}{% include twitter.html %}
+        {% assign github = 'richardjohansson' %}{% include github.html %}
       </li>
     </ul>
   </li>
