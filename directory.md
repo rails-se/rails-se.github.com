@@ -118,6 +118,10 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign github = 'magnushoerberg' %}{% include github.html %}
       </li>
       <li>
+        Mattias Roback
+        {% assign github = 'roback' %}{% include github.html %}
+      </li>
+      <li>
         Patrik Ragnarsson
         {% assign twitter = 'dentarg_' %}{% include twitter.html %}
         {% assign github = 'dentarg' %}{% include github.html %}
