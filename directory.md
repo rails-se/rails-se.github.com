@@ -194,7 +194,16 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       </li>
     </ul>
   </li>
-
+  <li>
+    <a href="http://folkia.eu">Folkia AS</a>
+    <ul>
+      <li>
+        Martin Holmin
+        {% assign twitter = 'martinholmin' %}{% include twitter.html %}
+        {% assign github = 'martinholmin' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="http://www.hemnet.se">Hemnet</a>
   </li>
