@@ -130,6 +130,20 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 </ul>
 
+## Malmö
+<ul>
+  <li>
+    <a href="http://www.codehacker.se">Codehacker</a>
+    <ul>
+      <li>
+        Karl Metum
+        {% assign twitter = 'karlingen' %}{% include twitter.html %}
+        {% assign github = 'karlingen' %}{% include github.html %}
+      </li>
+     </ul>
+  </li>
+</ul>
+
 ## Stockholm
 
 <ul>
