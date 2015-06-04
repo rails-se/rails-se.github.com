@@ -246,6 +246,9 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       <li>Filippos Vasilakis
         {% assign github = 'vasilakisfil' %}{% include github.html %}
       </li>
+      <li>Dennis Carlsson
+        {% assign github = 'dencarlsson' %}{% include github.html %}
+      </li>
     </ul>
   </li>
   <li>
