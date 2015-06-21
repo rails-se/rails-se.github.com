@@ -169,16 +169,11 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       <li>Linus Sellberg</li>
     </ul>
   </li>
-
+  
   <li>
-    <a href="https://baraspara.se/">Baraspara.se</a>
-  </li>
-
-  <li>
-    <a href="http://barsoom.se">Barsoom</a>
+    <a href="https://auctionet.com">Auctionet.com</a>
     <ul>
       <li>Albert Ramstedt</li>
-      <li>Andreas Alin</li>
       <li>
         <a href="http://henrik.nyh.se">Henrik Nyh</a>
         {% assign twitter = 'henrik' %}{% include twitter.html %}
@@ -196,6 +191,10 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       </li>
       <li>Tomas Skogberg</li>
     </ul>
+  </li>
+
+  <li>
+    <a href="https://baraspara.se/">Baraspara.se</a>
   </li>
 
   <li>
