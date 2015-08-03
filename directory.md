@@ -69,6 +69,11 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     </li>
   </ul>
   </li>
+
+  <li>
+    <a href="http://varvet.se">Varvet</a>
+  </li>
+
 </ul>
 
 ## Karlskrona
