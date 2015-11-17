@@ -500,6 +500,11 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     {% assign twitter = 'NiteOL' %}{% include twitter.html %}
     {% assign github = 'codinatrix' %}{% include github.html %}
   </li>
+  <li>
+    <a href="http://standout.se/">Standout AB</a>
+    {% assign twitter = 'standoutab' %}{% include twitter.html %}
+    {% assign github = 'standout' %}{% include github.html %}
+  </li>
 </ul>
 
 
