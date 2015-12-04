@@ -194,7 +194,11 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         {% assign twitter = 'Lavinia666' %}{% include twitter.html %}
         {% assign github = 'Lavinia' %}{% include github.html %}
       </li>
-      <li>Tomas Skogberg</li>
+      <li>
+        Tomas Skogberg
+        {% assign twitter = 'tskogberg' %}{% include twitter.html %}
+        {% assign github = 'tskogberg' %}{% include github.html %}
+      </li>
     </ul>
   </li>
 
