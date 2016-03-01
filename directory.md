@@ -60,6 +60,21 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 
   <li>
+    <a href="http://www.ibissoft.se">IbisSoft</a>
+    <ul>
+      <li>
+        Rogier Krona
+        {% assign twitter = 'RogTheFox' %}{% include twitter.html %}
+        {% assign github = 'RogTheFox' %}{% include github.html %}
+      </li>
+      <li>
+        Tomas Andersson
+        {% assign github = 'telimbectar' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+
+  <li>
   <a href="http://kyparn.se">Kyparn.se</a>
   <ul>
     <li>
@@ -228,6 +243,28 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
   <li>
     <a href="http://www.hemnet.se">Hemnet</a>
+  </li>
+  <li>
+    <a href="http://www.ibissoft.se">IbisSoft</a>
+    <ul>
+      <li>
+        Rogier Krona
+        {% assign twitter = 'RogTheFox' %}{% include twitter.html %}
+        {% assign github = 'RogTheFox' %}{% include github.html %}
+      </li>
+      <li>
+        Alexey Stryi
+        {% assign github = 'alexey-stryi' %}{% include github.html %}
+      </li>
+      <li>
+        Tomas Andersson
+        {% assign github = 'telimbectar' %}{% include github.html %}
+      </li>
+      <li>
+        Mattias Creutzberg
+        {% assign github = 'SetOfIdentifiers' %}{% include github.html %}
+      </li>
+    </ul>
   </li>
   <li>
     <a href="http://www.itsinthenode.com">Its in the Node</a>
