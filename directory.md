@@ -232,7 +232,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     </ul>
   </li>
   <li>
-    <a href="http://folkia.eu">Folkia AS</a>
+    <a href="http://www.folkefinans.com">Folkefinans AS</a>
     <ul>
       <li>
         Martin Holmin
