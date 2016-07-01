@@ -417,6 +417,17 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 
   <li>
+    <a href="mailto:peter@lind.be">Supermåne</a>
+    <ul>
+      <li>
+        Peter Lind
+        {% assign twitter = 'peter_lind' %}{% include twitter.html %}
+        {% assign github = 'peterlind' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+
+  <li>
     <a href="http://www.teamtailor.com">Teamtailor</a>
     <ul>
       <li>
