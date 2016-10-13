@@ -270,6 +270,16 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
     <a href="http://www.itsinthenode.com">Its in the Node</a>
   </li>
   <li>
+    <a href="http://justarrived.se">Just Arrived</a>
+    <ul>
+      <li>
+        Jacob Burenstam
+        {% assign twitter = 'bnuren' %}{% include twitter.html %}
+        {% assign github = 'buren' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
+  <li>
     <a href="http://www.jmkplay.se">JMK, Stockholms universitet</a>
   </li>
   <li>
