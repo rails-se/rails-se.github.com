@@ -189,7 +189,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
       <li>Linus Sellberg</li>
     </ul>
   </li>
-  
+
   <li>
     <a href="https://auctionet.com">Auctionet.com</a>
     <ul>
@@ -447,32 +447,6 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 
   <li>
-    <a href="http://www.thoughtbot.se/">thoughtbot</a>
-    <ul>
-      <li>
-        <a href="http://arun.im/">Arun Agrawal</a>
-        {% assign twitter = 'arunagw' %}{% include twitter.html %}
-        {% assign github = 'arunagw' %}{% include github.html %}
-      </li>
-      <li>
-        <a href="http://georgebrock.com">George Brocklehurst</a>
-        {% assign twitter = 'georgebrock' %}{% include twitter.html %}
-        {% assign github = 'georgebrock' %}{% include github.html %}
-      </li>
-      <li>
-        <a href="http://mike-burns.com/">Mike Burns</a>
-        {% assign twitter = 'mikeburns' %}{% include twitter.html %}
-        {% assign github = 'mike-burns' %}{% include github.html %}
-      </li>
-      <li>
-        <a href="http://teoljungberg.com">Teo Ljungberg</a>
-        {% assign twitter = 'teoljungberg' %}{% include twitter.html %}
-        {% assign github = 'teoljungberg' %}{% include github.html %}
-      </li>
-    </ul>
-  </li>
-
-  <li>
     <a href="https://travellersmatch.com">Travellersmatch</a>
     <ul>
       <li>
@@ -509,7 +483,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   <li>
     <a href="http://www.valtech.se">Valtech</a>
   </li>
-  
+
   <li>
     <a href="http://whisprgroup.com">WhisprGroup (mediapilot)</a>
     <ul>
