@@ -220,6 +220,17 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   <li>
     <a href="https://baraspara.se/">Baraspara.se</a>
   </li>
+  
+  <li>
+    <a href="https://github.com/beardlesshq">Beardless AB</a>
+    <ul>
+      <li>
+        <a href="http://www.martinholmin.se/">Martin Holmin</a>
+        {% assign twitter = 'martinholmin' %}{% include twitter.html %}
+        {% assign github = 'martinholmin' %}{% include github.html %}
+      </li>
+    </ul>
+  </li>
 
   <li>
     <a href="http://bukowskis.com">Bukowskis</a>
@@ -228,16 +239,6 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
         Daniel Eriksson
         {% assign twitter = 'danieleriksson' %}{% include twitter.html %}
         {% assign github = 'daniel' %}{% include github.html %}
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="http://www.folkefinans.com">Folkefinans AS</a>
-    <ul>
-      <li>
-        Martin Holmin
-        {% assign twitter = 'martinholmin' %}{% include twitter.html %}
-        {% assign github = 'martinholmin' %}{% include github.html %}
       </li>
     </ul>
   </li>
