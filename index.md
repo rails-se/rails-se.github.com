@@ -18,7 +18,7 @@ layout: default
 ## Resurser
 
 * [Tips för svenska applikationer](/tips)
-* [Team, projekt och utvecklare](/directory)
+* [Team](/directory)
 
 ## Legacy
 
