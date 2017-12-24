@@ -17,7 +17,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
 
 <ul>
   <li>
-    <a href="http://mittmedia.se">MittMedia</a>
+    <a href="http://dev.mittmedia.se">MittMedia</a>
   </li>
 </ul>
 
@@ -25,7 +25,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
 
 <ul>
   <li>
-    <a href="http://mittmedia.se">MittMedia</a>
+    <a href="http://dev.mittmedia.se">MittMedia</a>
   </li>
 
   <li>
@@ -184,7 +184,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
 
 <ul>
   <li>
-    <a href="http://mittmedia.se">MittMedia</a>
+    <a href="http://dev.mittmedia.se">MittMedia</a>
   </li>
 
   <li>
