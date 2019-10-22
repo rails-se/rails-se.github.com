@@ -69,6 +69,7 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
 
 <ul>
   <li>
+    <a href="https://www.teamtailor.com">Teamtailor</a>
     <a href="http://www.twingly.com">Twingly</a>
   </li>
 </ul>
