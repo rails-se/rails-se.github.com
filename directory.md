@@ -106,9 +106,9 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   <li>
     <a href="http://bukowskis.com">Bukowskis</a>
   </li>
-  
+
   <li>
-  <a href="https://fishbrain.com">Fishbrain</a> (<a href="https://careers.fishbrain.com/">Vacancies</a>)
+    <a href="https://fishbrain.com">Fishbrain</a>
   </li>
 
   <li>
