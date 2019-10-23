@@ -156,6 +156,10 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
   </li>
 
   <li>
+    <a href="https://www.shopify.com/">Shopify</a>
+  </li>
+
+  <li>
     <a href="mailto:peter@lind.be">Supermåne</a>
   </li>
 
