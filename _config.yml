@@ -1,2 +1,5 @@
 title: "Ruby och Rails i Sverige"
 markdown: kramdown
+exclude:
+  - vendor
+  - tmp
