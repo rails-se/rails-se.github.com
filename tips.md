@@ -22,7 +22,6 @@ title: Tips för svenska applikationer
 
 * [Rails i18n guide](http://guides.rubyonrails.org/i18n.html)
 * [Rails i18n tips](http://thepugautomatic.com/2012/07/rails-i18n-tips/)
-* [Working with time zones in Ruby on Rails](http://www.elabs.se/blog/36-working-with-time-zones-in-ruby-on-rails)
 * [Timezones in SQL queries](http://thepugautomatic.com/2009/03/time-zones-and-multidimensional-grouping-with-active-record-and-mysql/)
 
 ## Meta
