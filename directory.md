@@ -63,8 +63,8 @@ Långt ifrån komplett! [Lägg gärna till](https://github.com/rails-se/rails-se
 ## Stockholm
 
 <ul>
-<li>
-    <a href="https://www.airspace.com">Airspace</a>
+  <li>
+    <a href="https://www.airspace.com">Airspace (Sverige Filial)</a>
   </li>
   
   <li>
